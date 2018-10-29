@@ -1,34 +1,72 @@
 import java.util.Scanner;
-/**
+/**.
  * Interface for graph.
  */
 interface Graph {
-    
+    /**.
+     * variable for v
+     *
+     * @return     { int }
+     */
     int v();
-    
+    /**.
+     * edge variable
+     *
+     * @return     { int }
+     */
     int e();
-    
+    /**.
+     * method to add the edge
+     *
+     * @param      v     { vertex one }
+     * @param      w     { vertex two }
+     */
     void addEdge(int v, int w);
-    
+    /**.
+     * Iterable object
+     *
+     * @param      v     { vertex }
+     *
+     * @return     { int }
+     */
     Iterable<Integer> adj(int v);
-    
+    /**.
+     * methd to check the edge
+     *
+     * @param      v     { vetex }
+     * @param      w     { vertex }
+     *
+     * @return     True if has edge, False otherwise.
+     */
     boolean hasEdge(int v, int w);
 }
-/**
+/**.
  * Class for graph adt.
  */
 class GraphADT implements Graph {
-    
+    /**.
+     * vertes node
+     */
     private int ver;
-    
+    /**.
+     * edge variable
+     */
     private int ed;
-    
+    /**.
+     * bag variable
+     */
     private Bag<Integer>[] adj;
-    
+    /**.
+     * grapgh Adt
+     */
     protected GraphADT() {
 
     }
-    
+    /**.
+     * grapgh constructor
+     *
+     * @param      v     { int }
+     */
     GraphADT(final int v) {
         this.ver = v;
         this.ed = 0;
@@ -37,7 +75,7 @@ class GraphADT implements Graph {
             adj[i] = new Bag<Integer>();
         }
     }
-    /**
+    /**.
      * Returns the number of edges in this graph.
      *
      * @return the number of edges in this graph
@@ -46,7 +84,7 @@ class GraphADT implements Graph {
         return ver;
     }
 
-    /**
+    /**.
      * Returns the number of edges in this graph.
      *
      * @return the number of edges in this graph
@@ -54,11 +92,11 @@ class GraphADT implements Graph {
     public int e() {
         return ed;
     }
-    /**
+    /**.
      * Adds an edge.
      *
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
+     * @param      v     { vertex }
+     * @param      w     { vertex }
      */
     public void addEdge(final int v, final int w) {
         if (v == w) {
@@ -73,18 +111,18 @@ class GraphADT implements Graph {
     /**.
      * { function_description }
      *
-     * @param      v     { parameter_description }
+     * @param      v     { vertex }
      *
-     * @return     { description_of_the_return_value }
+     * @return     { int }
      */
     public Iterable<Integer> adj(final int v) {
         return adj[v];
     }
-    /**
+    /**.
      * Determines if it has edge.
      *
-     * @param      v     { parameter_description }
-     * @param      w     { parameter_description }
+     * @param      v     { vertex }
+     * @param      w     { vertex }
      *
      * @return     True if has edge, False otherwise.
      */
@@ -99,11 +137,11 @@ class GraphADT implements Graph {
     /**.
      * To display the list.
      *
-     * @param      v2          { parameter_description }
-     * @param      e2          { parameter_description }
+     * @param      v2          { vertex }
+     * @param      e2          { edge }
      * @param      tokens     The tokens
      *
-     * @throws     Exception  { exception_description }
+     * @throws     Exception  { if no edges are present }
      */
     public void listdisplay(final int v2,
         final int e2, final String[] tokens) throws Exception {
@@ -123,13 +161,13 @@ class GraphADT implements Graph {
         }
     }
 
-    /**
+    /**.
      * to display the matrix.
      *
-     * @param      v1          { parameter_description }
-     * @param      e1          { parameter_description }
+     * @param      v1          { vertex }
+     * @param      e1          { edge }
      *
-     * @throws     Exception  { exception_description }
+     * @throws     Exception  { no edges }
      */
     public void matrixdisplay(final int v1, final int e1) throws Exception {
         if (e1 <= 1 && v1 <= 1) {
@@ -155,17 +193,17 @@ class GraphADT implements Graph {
         }
     }
 }
-/**
+/**.
  * Client class.
  */
 public final class Solution {
-    /**
+    /**.
      * Constructs the object.
      */
     protected Solution() {
         //Empty Constructer.
     }
-    /**
+    /**.
      * Client function.
      *
      * @param      args  The arguments
