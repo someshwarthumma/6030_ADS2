@@ -132,7 +132,7 @@ class GraphADT implements Graph {
      * @throws     Exception  { exception_description }
      */
     public void matrixdisplay(final int v1, final int e1) throws Exception {
-        if (e1 < 1 && v1 < 1) {
+        if (e1 <= 1 && v1 <= 1) {
             System.out.println(v() + " vertices" + ", " + e() + " edges");
             throw new Exception("No edges");
         } else {

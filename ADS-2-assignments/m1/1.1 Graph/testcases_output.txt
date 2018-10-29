@@ -236,14 +236,14 @@ Your Output:
 Hyderabad:
 ----------------------------------------
 
-########## Testcase 5: Failed ##########
+########## Testcase 5: Passed ##########
 Expected Output: 
 1 vertices, 0 edges
 No edges
 
 Your Output: 
 1 vertices, 0 edges
-0
+No edges
 ----------------------------------------
 
 ########## Testcase 6: Passed ##########
