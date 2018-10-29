@@ -63,6 +63,7 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
      * {Add the item to the bag}.
+     * Complexity O(N)
      *
      * @param      item  The item
      */
@@ -77,6 +78,7 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**
       * Return an iterator that iterates over the items in the bag.
+      * Complexity O(N)
       * @return    {Iterator}
       */
     public Iterator<Item> iterator()  {
@@ -109,6 +111,7 @@ public class Bag<Item> implements Iterable<Item> {
         }
         /**
          * {Method to find the next}.
+         * Complexity O(1)
          *
          * @return     {Item}
          */

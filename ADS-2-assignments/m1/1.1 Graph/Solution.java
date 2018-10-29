@@ -17,6 +17,7 @@ interface Graph {
     int e();
     /**.
      * method to add the edge
+     * Complexity O(1)
      *
      * @param      v     { vertex one }
      * @param      w     { vertex two }
@@ -24,6 +25,7 @@ interface Graph {
     void addEdge(int v, int w);
     /**.
      * Iterable object
+     * Complexity O(1)
      *
      * @param      v     { vertex }
      *
@@ -32,6 +34,7 @@ interface Graph {
     Iterable<Integer> adj(int v);
     /**.
      * methd to check the edge
+     * Complexity O(1)
      *
      * @param      v     { vetex }
      * @param      w     { vertex }
@@ -77,6 +80,7 @@ class GraphADT implements Graph {
     }
     /**.
      * Returns the number of edges in this graph.
+     * Complexity O(1)
      *
      * @return the number of edges in this graph
      */
@@ -86,6 +90,7 @@ class GraphADT implements Graph {
 
     /**.
      * Returns the number of edges in this graph.
+     * Complexity O(1)
      *
      * @return the number of edges in this graph
      */
@@ -94,6 +99,7 @@ class GraphADT implements Graph {
     }
     /**.
      * Adds an edge.
+     * Complexity O(1)
      *
      * @param      v     { vertex }
      * @param      w     { vertex }
@@ -120,6 +126,7 @@ class GraphADT implements Graph {
     }
     /**.
      * Determines if it has edge.
+     * Complexity O(N)
      *
      * @param      v     { vertex }
      * @param      w     { vertex }
@@ -136,6 +143,7 @@ class GraphADT implements Graph {
     }
     /**.
      * To display the list.
+     * Complexity O(N)
      *
      * @param      v2          { vertex }
      * @param      e2          { edge }
@@ -163,6 +171,7 @@ class GraphADT implements Graph {
 
     /**.
      * to display the matrix.
+     * Complexity O(N)
      *
      * @param      v1          { vertex }
      * @param      e1          { edge }
@@ -205,6 +214,7 @@ public final class Solution {
     }
     /**.
      * Client function.
+     * Complexity O(N)
      *
      * @param      args  The arguments
      */
