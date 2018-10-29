@@ -107,7 +107,7 @@ class GraphADT implements Graph {
      */
     public void listdisplay(final int v2,
         final int e2, final String[] tokens) throws Exception {
-        if (e2 < 1 && v2 < 1) {
+        if (e2 <= 1 && v2 <= 1) {
             System.out.println(v() + " vertices" + ", " + e() + " edges");
             throw new Exception("No edges");
         } else {
