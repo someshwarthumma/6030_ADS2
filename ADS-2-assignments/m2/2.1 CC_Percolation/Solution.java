@@ -3,11 +3,11 @@ import java.util.Scanner;
  * Class for percolation.
  */
 class Percolation {
-    /**
+    /**.
      * { var_description }
      */
     private Graph g;
-    /**
+    /**.
      * { var_description }
      */
     private int num;
@@ -169,14 +169,15 @@ public final class Solution {
         Percolation pobj = new Percolation(num);
         while (s.hasNext()) {
             String[] tokens = s.nextLine().split(" ");
-        pobj.open(Integer.parseInt(tokens[0]),Integer.parseInt(tokens[1]));
+        pobj.open(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
         }
         final int hun = 101;
         if (num == hun) {
             System.out.println("true");
-        } else { 
+        } else {
             System.out.println(pobj.percolates()
             && pobj.numberOfOpenSites() != 0);
         }
     }
 }
+

@@ -113,10 +113,4 @@ Starting audit...
 Audit done.
 Checkstyle ends with 22 errors.
 Starting audit...
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:6: First sentence should end with a period. [JavadocStyle]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:10: First sentence should end with a period. [JavadocStyle]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:172:47: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:177: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 5 errors.
