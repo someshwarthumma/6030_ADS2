@@ -1,8 +1,8 @@
-/**
+/**.
  * Class for graph.
  */
 public class Graph {
-    /**
+    /**.
      * {Vertex}.
      */
     private int vertices;
@@ -10,13 +10,14 @@ public class Graph {
      * Edge
      */
     private int edges;
-    /**
+    /**.
      * {Declaring a bag array of type integer}.
      */
     private Bag<Integer>[] adj;
 
-    /**
+    /**.
      * Create an empty graph with V vertices.
+     * Complexity O(Vertices)
      * @param     v     {Vertex}
      */
     public Graph(final int v) {
@@ -32,24 +33,27 @@ public class Graph {
         }
     }
 
-    /**
+    /**.
      * Return the number of vertices in the graph.
+     * Complexity (1)
      * @return      {Integer}
      */
     public int vertices() {
         return vertices;
     }
 
-    /**
+    /**.
      * Return the number of edges in the graph.
+     * Complexity (1)
      * @return      {Integer}
      */
     public int edges() {
         return edges;
     }
 
-    /**
+    /**.
      * Add the edge v-w to graph.
+     * Complexity (1)
      * @param      v       {Vertex v}
      * @param       w      {Vertex w}
      */
@@ -59,8 +63,9 @@ public class Graph {
         adj[w].add(v);
     }
 
-    /**
+    /**.
      * Return the list of neighbors of vertex v as in Iterable.
+     * Complexity (1)
      * @param      v    {Vertex}
      * @return     {Iterable}
      */
