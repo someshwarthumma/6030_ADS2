@@ -22,19 +22,19 @@ Your Output:
 Graph is bipartite
 ----------------------------------------
 
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 Graph is not a bipartite
 
 Your Output: 
-Graph is bipartite
+Graph is not a bipartite
 ----------------------------------------
 
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 Graph is not a bipartite
 
 Your Output: 
-Graph is bipartite
+Graph is not a bipartite
 ----------------------------------------
 

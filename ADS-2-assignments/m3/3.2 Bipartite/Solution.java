@@ -1,25 +1,55 @@
 import java.util.Scanner;
+/**
+ * solution class
+ */
 class Solution{
+	/**
+	 * main method
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		int vertices = Integer.parseInt(s.nextLine());
 		int edges = Integer.parseInt(s.nextLine());
 		Graph g = new Graph(vertices);
+		while(s.hasNext()){
+			String[] tokens = s.nextLine().split(" ");
+			g.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
+		}
 		Bipartite b = new Bipartite(g);
-		if (b.isBipartitie()) {
+		if (b.isBipartite()) {
 			System.out.println("Graph is bipartite");
 		} else {
 			System.out.println("Graph is not a bipartite");
 		}
 	}
 }
-
+/**
+ * Biprtitte class
+ */
 class Bipartite {
+	/**
+	 * marked array
+	 */
 	boolean[] marked;
+	/**
+	 * color array
+	 */
 	boolean[] color;
+	/**
+	 * edgeTo array of int type
+	 */
 	int[] edgeTo;
-	Stack<Integer> stack;
+	/**.
+	 * flag
+	 */
 	boolean flag;
+	/**
+	 * Bipartite
+	 *
+	 * @param      g     { parameter_description }
+	 */
 	Bipartite(Graph g) {
 		marked = new boolean[g.vertices()];
 		color = new boolean[g.vertices()];
@@ -32,29 +62,23 @@ class Bipartite {
 		}
 	}
 
-	private void dfs(final Graph graph, final int vertex) {
-        marked[vertex] = true;
-        for (int each : graph.adj(vertex)) {
-            if (!flag) {
-                return;
-            }
-            if (!marked[each]) {
-                color[each] = !color[vertex];
-                edgeTo[each] = vertex;
-                dfs(graph, each);
-            } else if (color[each] == color[vertex]) {
-                flag = false;
-                /*stack = new Stack<Integer>();
-                stack.push(each);
-                for (int j = vertex; j != each; j = edgeTo[j]) {
-                    stack.push(j);
-                }
-                stack.push(each);*/
-            }
-        }
-    }    
+	public void dfs(Graph g, int vertex) {
+		marked[vertex] = true;
+		if(flag==false){
+			return;
+		}
+		for (int each : g.adj(vertex)) {
+			if (!marked[each]) {
+				color[each] = !color[vertex];
+				edgeTo[each] = vertex;
+				dfs(g, each);
+			} else if (color[each]==color[vertex]){
+				flag = false;
+			}
+		}
+	}
 
-	public boolean isBipartitie(){
+	public boolean isBipartite(){
 		return flag;
 	}
 
