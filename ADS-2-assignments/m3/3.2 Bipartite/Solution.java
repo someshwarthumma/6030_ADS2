@@ -71,6 +71,7 @@ class Bipartite {
     }
     /**.
      * dfs method
+     * Complexity O(Edges+Vertices)
      *
      * @param      g       { parameter_description }
      * @param      vertex  The vertex
@@ -92,7 +93,7 @@ class Bipartite {
     }
     /**.
      * check weather bipartite or not
-     *
+     * complexity O(1)
      *
      * @return     True if bipartite, False otherwise.
      */
