@@ -23,17 +23,17 @@ public class Graph {
      * Initializes an empty graph with vertices and 0 edges.
      * param V the number of vertices
      *
-     * @param  v number of vertices
+     * @param  vi number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    public Graph(final int v) {
-        if (v < 0) { 
+    public Graph(final int vi) {
+        if (vi < 0) {
             throw new IllegalArgumentException(
                 "Number of vertices must be nonnegative");
         }
-        this.v = v;
+        this.v = vi;
         this.e = 0;
-        adj = (Bag<Integer>[]) new Bag[v];
+        adj = (Bag<Integer>[]) new Bag[vi];
         for (int ve = 0; ve < v; ve++) {
             adj[ve] = new Bag<Integer>();
         }
