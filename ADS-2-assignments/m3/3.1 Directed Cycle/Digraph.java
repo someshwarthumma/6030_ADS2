@@ -24,12 +24,15 @@ public class Digraph {
     private int[] indegree;
     /**.
      * Initializes an empty digraph with <em>V</em> vertices.
+     * complexity is O(N)
      *
      * @param  ve the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
     public Digraph(final int ve) {
-        if (ve < 0) throw new IllegalArgumentException("Number is negative");
+        if (ve < 0) {
+            throw new IllegalArgumentException("Number is negative");
+        }
         this.vertex = ve;
         this.edge = 0;
         indegree = new int[vertex];
@@ -40,31 +43,39 @@ public class Digraph {
     }
     /**.
      * Returns the number of vertices in this digraph.
+     * complexity is O(1)
      *
      * @return the number of vertices in this digraph
      */
-    public int V() {
+    public int v() {
         return vertex;
     }
 
     /**.
      * Returns the number of edges in this digraph.
+     * complexity is O(1)
      *
      * @return the number of edges in this digraph
      */
-    public int E() {
+    public int e() {
         return edge;
     }
-
-
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
+    /**.
+     * method to validate vertex
+     * complexity is O(1)
+     *
+     * @param      v     { parameter_description }
+     */
     private void validateVertex(final int v) {
-        if (v < 0 || v >= vertex)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (vertex - 1));
+        if (v < 0 || v >= vertex) {
+            throw new IllegalArgumentException(
+                "vertex " + v + " is not between 0 and " + (vertex - 1));
+        }
     }
 
     /**.
      * Adds the directed edge v→w to this digraph.
+     * complexity is O(1)
      *
      * @param  v the tail vertex
      * @param  w the head vertex
@@ -79,11 +90,12 @@ public class Digraph {
     }
 
     /**.
-     * Returns the vertices adjacent from vertex {@code v} in this digraph.
+     * { adj method }
+     * complexity is O(1)
      *
-     * @param  v the vertex
-     * @return the vertices adjacent , as an iterable
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * @param      v     { int }
+     *
+     * @return     { Iterator }
      */
     public Iterable<Integer> adj(final int v) {
         validateVertex(v);
@@ -91,33 +103,34 @@ public class Digraph {
     }
 
     /**.
-     * Returns the number of directed edges incident from vertex {@code v}.
-     * This is known as the <em>outdegree</em> of vertex {@code v}.
+     * { out degree method }
+     * complexity is O(1)
      *
-     * @param  v the vertex
-     * @return the outdegree of vertex {@code v}
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * @param      v     { v }
+     *
+     * @return     { int }
      */
-    public int outdegree(int v) {
+    public int outdegree(final int v) {
         validateVertex(v);
         return adj[v].size();
     }
 
     /**.
-     * Returns the number of directed edges incident to vertex {@code v}.
-     * This is known as the <em>indegree</em> of vertex {@code v}.
+     * { method for in degree }
+     * complexity is O(1)
      *
-     * @param  v the vertex
-     * @return the indegree of vertex {@code v}
-     * @throws IllegalArgumentException unless {@code 0 <= v < V}
+     * @param      v     { v }
+     *
+     * @return     { int }
      */
-    public int indegree(int v) {
+    public int indegree(final int v) {
         validateVertex(v);
         return indegree[v];
     }
 
     /**.
      * Returns the reverse of the digraph.
+     * complexity is O(N^2)
      *
      * @return the reverse of the digraph
      */
@@ -133,6 +146,7 @@ public class Digraph {
 
     /**.
      * Returns a string representation of the graph.
+     * complexity is O(N^2)
      *
      * @return String
      */
