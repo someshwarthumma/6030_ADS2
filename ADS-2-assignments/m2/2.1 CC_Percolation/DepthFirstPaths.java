@@ -12,8 +12,8 @@ public class DepthFirstPaths {
      */
     public DepthFirstPaths(Graph g, int s) {
         this.s = s;
-        edgeTo = new int[g.V()];
-        marked = new boolean[g.V()];
+        edgeTo = new int[g.v()];
+        marked = new boolean[g.v()];
         validateVertex(s);
         dfs(g, s);
     }
