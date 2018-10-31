@@ -6,7 +6,7 @@ final class Solution {
 	/**.
 	 * Solution constructor
 	 */
-	private Solution(){
+	private Solution() {
 		//Constructor
 	}
 	/**.
@@ -14,14 +14,14 @@ final class Solution {
 	 *
 	 * @param      args  The arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		Scanner s = new Scanner(System.in);
 		int vertices = Integer.parseInt(s.nextLine());
 		int edges = Integer.parseInt(s.nextLine());
 		Graph g = new Graph(vertices);
 		while (s.hasNext()) {
-			String[] tokens = s.nextLine().split(" ");
-			g.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
+			String[] t = s.nextLine().split(" ");
+			g.addEdge(Integer.parseInt(t[0]), Integer.parseInt(t[1]));
 		}
 		Bipartite b = new Bipartite(g);
 		if (b.isBipartite()) {
@@ -56,7 +56,7 @@ class Bipartite {
 	 *
 	 * @param      g     { parameter_description }
 	 */
-	Bipartite(Graph g) {
+	Bipartite(final Graph g) {
 		marked = new boolean[g.vertices()];
 		color = new boolean[g.vertices()];
 		edgeTo = new int[g.vertices()];
