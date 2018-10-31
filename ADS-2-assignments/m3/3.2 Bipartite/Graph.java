@@ -7,7 +7,7 @@ public class Graph {
      */
     private int vertices;
     /**
-     * {Edges}.
+     * Edge
      */
     private int edges;
     /**
