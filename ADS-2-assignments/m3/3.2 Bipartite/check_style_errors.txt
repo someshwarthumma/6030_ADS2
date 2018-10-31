@@ -29,19 +29,10 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:23:19: Parameter g should be final. [FinalParameters]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:28:31: ';' is preceded with whitespace. [NoWhitespaceBefore]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:35:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:35:25: Parameter g should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:35:34: Parameter vertex should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:37:19: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:37:24: '==' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:37:24: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:37:26: '==' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:37:32: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:45:47: '==' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:45:49: '==' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:45:63: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:51:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:51:38: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:55: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:57:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:57:38: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 34 errors.
+Checkstyle ends with 25 errors.
 Starting audit...
 Audit done.

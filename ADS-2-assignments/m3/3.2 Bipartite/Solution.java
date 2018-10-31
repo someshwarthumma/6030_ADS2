@@ -32,21 +32,27 @@ class Bipartite {
 		}
 	}
 
-	public void dfs(Graph g, int vertex) {
-		marked[vertex] = true;
-		if(flag==false){
-			return;
-		}
-		for (int each : g.adj(vertex)) {
-			if (!marked[each]) {
-				color[each] = !color[vertex];
-				edgeTo[each] = vertex;
-				dfs(g, each);
-			} else if (color[each]==color[vertex]){
-				flag = false;
-			}
-		}
-	}
+	private void dfs(final Graph graph, final int vertex) {
+        marked[vertex] = true;
+        for (int each : graph.adj(vertex)) {
+            if (!flag) {
+                return;
+            }
+            if (!marked[each]) {
+                color[each] = !color[vertex];
+                edgeTo[each] = vertex;
+                dfs(graph, each);
+            } else if (color[each] == color[vertex]) {
+                flag = false;
+                /*stack = new Stack<Integer>();
+                stack.push(each);
+                for (int j = vertex; j != each; j = edgeTo[j]) {
+                    stack.push(j);
+                }
+                stack.push(each);*/
+            }
+        }
+    }    
 
 	public boolean isBipartitie(){
 		return flag;
