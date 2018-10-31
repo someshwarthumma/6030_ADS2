@@ -6,7 +6,7 @@ public class Graph {
      * {Vertex}.
      */
     private int vertices;
-    /**
+    /**.
      * Edge
      */
     private int edges;
@@ -68,4 +68,5 @@ public class Graph {
         return adj[v];
     }
 }
+
 
