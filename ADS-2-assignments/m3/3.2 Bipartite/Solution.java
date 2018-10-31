@@ -1,9 +1,15 @@
 import java.util.Scanner;
-/**
+/**.
  * solution class
  */
-class Solution{
-	/**
+final class Solution {
+	/**.
+	 * Solution constructor
+	 */
+	private Solution(){
+		//Constructor
+	}
+	/**.
 	 * main method
 	 *
 	 * @param      args  The arguments
@@ -13,7 +19,7 @@ class Solution{
 		int vertices = Integer.parseInt(s.nextLine());
 		int edges = Integer.parseInt(s.nextLine());
 		Graph g = new Graph(vertices);
-		while(s.hasNext()){
+		while (s.hasNext()) {
 			String[] tokens = s.nextLine().split(" ");
 			g.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
 		}
@@ -25,19 +31,19 @@ class Solution{
 		}
 	}
 }
-/**
+/**.
  * Biprtitte class
  */
 class Bipartite {
-	/**
+	/**.
 	 * marked array
 	 */
 	boolean[] marked;
-	/**
+	/**.
 	 * color array
 	 */
 	boolean[] color;
-	/**
+	/**.
 	 * edgeTo array of int type
 	 */
 	int[] edgeTo;
@@ -45,7 +51,7 @@ class Bipartite {
 	 * flag
 	 */
 	boolean flag;
-	/**
+	/**.
 	 * Bipartite
 	 *
 	 * @param      g     { parameter_description }
@@ -61,10 +67,15 @@ class Bipartite {
 			}
 		}
 	}
-
+	/**.
+	 * dfs method
+	 *
+	 * @param      g       { parameter_description }
+	 * @param      vertex  The vertex
+	 */
 	public void dfs(Graph g, int vertex) {
 		marked[vertex] = true;
-		if(flag==false){
+		if (flag == false) {
 			return;
 		}
 		for (int each : g.adj(vertex)) {
@@ -72,13 +83,18 @@ class Bipartite {
 				color[each] = !color[vertex];
 				edgeTo[each] = vertex;
 				dfs(g, each);
-			} else if (color[each]==color[vertex]){
+			} else if (color[each] == color[vertex]) {
 				flag = false;
 			}
 		}
 	}
-
-	public boolean isBipartite(){
+	/**.
+	 * check weather bipartite or not
+	 *
+	 *
+	 * @return     True if bipartite, False otherwise.
+	 */
+	public boolean isBipartite() {
 		return flag;
 	}
 
