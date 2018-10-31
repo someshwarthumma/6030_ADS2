@@ -38,19 +38,19 @@ class Bipartite {
 	/**.
 	 * marked array
 	 */
-	boolean[] marked;
+	private boolean[] marked;
 	/**.
 	 * color array
 	 */
-	boolean[] color;
+	private boolean[] color;
 	/**.
 	 * edgeTo array of int type
 	 */
-	int[] edgeTo;
+	private int[] edgeTo;
 	/**.
 	 * flag
 	 */
-	boolean flag;
+	private boolean flag;
 	/**.
 	 * Bipartite
 	 *
@@ -61,7 +61,7 @@ class Bipartite {
 		color = new boolean[g.vertices()];
 		edgeTo = new int[g.vertices()];
 		flag = true;
-		for (int i = 0 ; i < g.vertices(); i++) {
+		for (int i = 0; i < g.vertices(); i++) {
 			if (!marked[i]) {
 				dfs(g, i);
 			}
@@ -73,9 +73,9 @@ class Bipartite {
 	 * @param      g       { parameter_description }
 	 * @param      vertex  The vertex
 	 */
-	public void dfs(Graph g, int vertex) {
+	public void dfs(final Graph g, final int vertex) {
 		marked[vertex] = true;
-		if (flag == false) {
+		if (!flag) {
 			return;
 		}
 		for (int each : g.adj(vertex)) {
