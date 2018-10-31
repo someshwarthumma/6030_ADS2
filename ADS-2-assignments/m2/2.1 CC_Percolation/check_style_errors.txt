@@ -61,27 +61,18 @@ Checkstyle ends with 19 errors.
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:1:8: Unused import - java.util.NoSuchElementException. [UnusedImports]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:3:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:6:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:6:23: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:7:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:7:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:8:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:17:18: Parameter V should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:17:22: 'V' hides a field. [HiddenField]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:17:22: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:18: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:32:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:41:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:46:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:46:33: Parameter v should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:47: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:59:25: Parameter v should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:59:32: Parameter w should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:75:34: Parameter v should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:87:23: Parameter v should be final. [FinalParameters]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:14:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:26:28: 'v' hides a field. [HiddenField]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:27: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:41:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:49:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:58: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:69:35: 'v' hides a field. [HiddenField]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:83:44: 'v' hides a field. [HiddenField]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:95:33: 'v' hides a field. [HiddenField]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:108:38: 'v' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 13 errors.
 Starting audit...
 Audit done.
