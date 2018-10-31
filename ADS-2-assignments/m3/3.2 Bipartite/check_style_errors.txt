@@ -1,0 +1,42 @@
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+Audit done.
+Checkstyle ends with 1 errors.
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:2:15: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:3:33: Parameter args should be final. [FinalParameters]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:17: Missing a Javadoc comment. [JavadocType]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:18:16: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:18:19: Variable 'marked' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:19:16: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:19:19: Variable 'color' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:20:12: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:20:15: Variable 'edgeTo' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:21:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:21:24: Variable 'stack' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:22:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:22:17: Variable 'flag' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:23:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:23:19: Parameter g should be final. [FinalParameters]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:28:31: ';' is preceded with whitespace. [NoWhitespaceBefore]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:35:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:35:25: Parameter g should be final. [FinalParameters]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:35:34: Parameter vertex should be final. [FinalParameters]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:45:47: '==' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:45:49: '==' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:45:63: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:51:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.2 Bipartite\Solution.java:51:38: '{' is not preceded with whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 29 errors.
+Starting audit...
+Audit done.
