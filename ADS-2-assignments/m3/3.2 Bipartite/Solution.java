@@ -34,9 +34,9 @@ class Bipartite {
 
 	public void dfs(Graph g, int vertex) {
 		marked[vertex] = true;
-		/*if(flag==false){
+		if(flag==false){
 			return;
-		}*/
+		}
 		for (int each : g.adj(vertex)) {
 			if (!marked[each]) {
 				color[each] = !color[vertex];
