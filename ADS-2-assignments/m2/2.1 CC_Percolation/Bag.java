@@ -55,7 +55,7 @@ public class Bag<Item> implements Iterable<Item> {
         return n;
     }
 
-    /**
+    /**.
      * { function_description }
      *
      * @param      item  Item
@@ -69,7 +69,7 @@ public class Bag<Item> implements Iterable<Item> {
     }
 
 
-    /**
+    /**.
      * Iterator
      *
      * @return     { Iterator }
