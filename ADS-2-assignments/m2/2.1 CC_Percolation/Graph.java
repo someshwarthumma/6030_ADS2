@@ -3,7 +3,7 @@
  * Class for graph.
  */
 public class Graph {
-    /**
+    /**.
      * newline string
      */
     private static final String NEWLINE = System.getProperty("line.separator");
@@ -28,7 +28,8 @@ public class Graph {
      */
     public Graph(final int v) {
         if (v < 0) { 
-            throw new IllegalArgumentException("Number of vertices must be nonnegative");
+            throw new IllegalArgumentException(
+                "Number of vertices must be nonnegative");
         }
         this.v = v;
         this.e = 0;
@@ -67,7 +68,7 @@ public class Graph {
     /**.
      * Adds the undirected edge v-w to this graph.
      *
-     * @param  v one vertex in the edge
+     * @param  ve one vertex in the edge
      * @param  w the other vertex in the edge
      * @throws IllegalArgumentException when illigal argument
      */
@@ -81,7 +82,7 @@ public class Graph {
     /**.
      * Returns the vertices adjacent to vertex {@code v}.
      *
-     * @param  v the vertex
+     * @param  ve the vertex
      * @return the vertices adjacent to vertex {@code v}, as an iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
@@ -93,7 +94,7 @@ public class Graph {
     /**.
      * Returns the degree of vertex {@code v}.
      *
-     * @param  v the vertex
+     * @param  ve the vertex
      * @return the degree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
