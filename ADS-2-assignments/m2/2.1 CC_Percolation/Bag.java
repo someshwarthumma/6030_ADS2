@@ -8,7 +8,7 @@ public class Bag<Item> implements Iterable<Item> {
     /**.
      * variable N
      */
-    private int N;         // number of elements in bag
+    private int n;         // number of elements in bag
     /**.
      * First Node
      */
@@ -32,46 +32,54 @@ public class Bag<Item> implements Iterable<Item> {
       */
     public Bag() {
         first = null;
-        N = 0;
+        n = 0;
     }
 
-    /**.
-      * Is the BAG empty?
-      */
+    /**
+     * method to check empty
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return first == null;
     }
 
     /**
-      * Return the number of items in the bag.
-      */
+     * size method
+     *
+     * @return     { int }
+     */
     public int size() {
-        return N;
+        return n;
     }
 
     /**.
       * Add the item to the bag.
       */
-    public void add(Item item) {
+    public void add(final Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        N++;
+        n++;
     }
 
 
-    /**.
-      * Return an iterator that iterates over the items in the bag.
-      */
+    /**
+     * Iterator
+     *
+     * @return     { Iterator }
+     */
     public Iterator<Item> iterator()  {
         return new ListIterator();
     }
 
-    // an iterator, doesn't implement remove() since it's optional
+    /**.
+     * class LIste Iteraator
+     */
     private class ListIterator implements Iterator<Item> {
         /**.
-         * Node
+         * node
          */
         private Node current = first;
         /**.
@@ -82,6 +90,9 @@ public class Bag<Item> implements Iterable<Item> {
         public boolean hasNext() {
             return current != null;
         }
+        /**.
+         * { function_description }
+         */
         public void remove() {
             throw new UnsupportedOperationException();
         }
@@ -91,10 +102,13 @@ public class Bag<Item> implements Iterable<Item> {
          * @return     { description_of_the_return_value }
          */
         public Item next() {
-            if (!hasNext()) throw new NoSuchElementException();
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
             Item item = current.item;
             current = current.next;
             return item;
         }
     }
 }
+
