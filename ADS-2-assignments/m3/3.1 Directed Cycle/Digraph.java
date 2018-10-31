@@ -4,7 +4,7 @@
 public class Digraph {
     private static final String NEWLINE = System.getProperty("line.separator");
     private final int vertex;           // number of vertices in this digraph
-    private int E;                 // number of edges in this digraph
+    private int edge;                 // number of edges in this digraph
     private Bag<Integer>[] adj;    // adj[v] = adjacency list for vertex v
     private int[] indegree;        // indegree[v] = indegree of vertex v
     /**.
@@ -16,7 +16,7 @@ public class Digraph {
     public Digraph(int ve) {
         if (ve < 0) throw new IllegalArgumentException("Number is negative");
         this.vertex = ve;
-        this.E = 0;
+        this.edge = 0;
         indegree = new int[vertex];
         adj = (Bag<Integer>[]) new Bag[vertex];
         for (int v = 0; v < vertex; v++) {
@@ -38,7 +38,7 @@ public class Digraph {
      * @return the number of edges in this digraph
      */
     public int E() {
-        return E;
+        return edge;
     }
 
 
@@ -60,7 +60,7 @@ public class Digraph {
         validateVertex(w);
         adj[v].add(w);
         indegree[w]++;
-        E++;
+        edge++;
     }
 
     /**.
@@ -123,7 +123,7 @@ public class Digraph {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(vertex + " vertices, " + E + " edges " + NEWLINE);
+        s.append(vertex + " vertices, " + edge + " edges " + NEWLINE);
         for (int v = 0; v < vertex; v++) {
             s.append(String.format("%d: ", v));
             for (int w : adj[v]) {

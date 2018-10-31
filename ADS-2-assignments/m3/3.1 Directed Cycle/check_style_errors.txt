@@ -5,7 +5,6 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:5:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:6:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:7:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:7:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:8:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:9:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:16:20: Parameter ve should be final. [FinalParameters]
@@ -22,7 +21,7 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:86:26: Parameter v should be final. [FinalParameters]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:99:25: Parameter v should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 20 errors.
+Checkstyle ends with 19 errors.
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:11: Line has trailing spaces. [RegexpSingleline]
