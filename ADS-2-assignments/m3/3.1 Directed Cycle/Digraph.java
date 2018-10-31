@@ -2,18 +2,33 @@
  * digraph class
  */
 public class Digraph {
+    /**.
+     * newline
+     */
     private static final String NEWLINE = System.getProperty("line.separator");
-    private final int vertex;           // number of vertices in this digraph
-    private int edge;                 // number of edges in this digraph
-    private Bag<Integer>[] adj;    // adj[v] = adjacency list for vertex v
-    private int[] indegree;        // indegree[v] = indegree of vertex v
+    /**.
+     * vertex variable
+     */
+    private final int vertex;
+    /**.
+     * edge variable
+     */
+    private int edge;
+    /**.
+     * bag variable
+     */
+    private Bag<Integer>[] adj;
+    /**.
+     * indegree
+     */
+    private int[] indegree;
     /**.
      * Initializes an empty digraph with <em>V</em> vertices.
      *
      * @param  ve the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    public Digraph(int ve) {
+    public Digraph(final int ve) {
         if (ve < 0) throw new IllegalArgumentException("Number is negative");
         this.vertex = ve;
         this.edge = 0;
@@ -43,7 +58,7 @@ public class Digraph {
 
 
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
-    private void validateVertex(int v) {
+    private void validateVertex(final int v) {
         if (v < 0 || v >= vertex)
             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (vertex - 1));
     }
@@ -55,7 +70,7 @@ public class Digraph {
      * @param  w the head vertex
      * @throws IllegalArgumentException unless both
      */
-    public void addEdge(int v, int w) {
+    public void addEdge(final int v, final int w) {
         validateVertex(v);
         validateVertex(w);
         adj[v].add(w);
@@ -70,7 +85,7 @@ public class Digraph {
      * @return the vertices adjacent , as an iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public Iterable<Integer> adj(int v) {
+    public Iterable<Integer> adj(final int v) {
         validateVertex(v);
         return adj[v];
     }
