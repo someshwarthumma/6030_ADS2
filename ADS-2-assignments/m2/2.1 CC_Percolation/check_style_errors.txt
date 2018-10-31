@@ -1,11 +1,8 @@
 Starting audit...
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Bag.java:7: Type Javadoc comment is missing @param <Item> tag. [JavadocType]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Bag.java:38: First sentence should end with a period. [JavadocStyle]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Bag.java:47: First sentence should end with a period. [JavadocStyle]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Bag.java:59:32: Expected @param tag for 'item'. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Bag.java:68: First sentence should end with a period. [JavadocStyle]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Bag.java:58: First sentence should end with a period. [JavadocStyle]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\Bag.java:72: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\CC.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m2\2.1 CC_Percolation\CC.java:5:5: Missing a Javadoc comment. [JavadocVariable]

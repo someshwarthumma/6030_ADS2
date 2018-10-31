@@ -2,7 +2,9 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 /**.
- *  Bag class
+ * bag class
+ *
+ * @param      <Item>  The item
  */
 public class Bag<Item> implements Iterable<Item> {
     /**.
@@ -35,7 +37,7 @@ public class Bag<Item> implements Iterable<Item> {
         n = 0;
     }
 
-    /**
+    /**.
      * method to check empty
      *
      * @return     True if empty, False otherwise.
@@ -44,7 +46,7 @@ public class Bag<Item> implements Iterable<Item> {
         return first == null;
     }
 
-    /**
+    /**.
      * size method
      *
      * @return     { int }
@@ -53,9 +55,11 @@ public class Bag<Item> implements Iterable<Item> {
         return n;
     }
 
-    /**.
-      * Add the item to the bag.
-      */
+    /**
+     * { function_description }
+     *
+     * @param      item  Item
+     */
     public void add(final Item item) {
         Node oldfirst = first;
         first = new Node();
