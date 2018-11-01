@@ -3,7 +3,15 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:21:5: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:21:13: Variable 'flag' must be private and have accessor methods. [VisibilityModifier]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:51:15: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:51:20: '==' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:51:20: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:51:22: '==' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m3\3.1 Directed Cycle\DirectedCycle.java:51:27: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
+Checkstyle ends with 7 errors.
 Starting audit...
 Audit done.
 Starting audit...

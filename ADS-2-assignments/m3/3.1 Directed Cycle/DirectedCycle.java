@@ -18,6 +18,7 @@ public class DirectedCycle {
      * { stack variable }.
      */
     private Stack<Integer> cycle;
+    boolean flag;
 
     /**
      * Determines whether the digraph {@code G} has a directed cycle and, if so
@@ -26,6 +27,7 @@ public class DirectedCycle {
      * @param graph the digraph
      */
     public DirectedCycle(final Digraph graph) {
+        flag = false;
         marked  = new boolean[graph.v()];
         onStack = new boolean[graph.v()];
         edgeTo  = new int[graph.v()];
@@ -46,6 +48,9 @@ public class DirectedCycle {
         onStack[v] = true;
         marked[v] = true;
         for (int w : graph.adj(v)) {
+            if(flag==true){
+                return;
+            }
 
             // short circuit if directed cycle found
             if (cycle != null) {
@@ -54,7 +59,9 @@ public class DirectedCycle {
                 edgeTo[w] = v;
                 dfs(graph, w);
             } else if (onStack[w]) {
+
                 cycle = new Stack<Integer>();
+                flag = true;
                 for (int x = v; x != w; x = edgeTo[x]) {
                     cycle.push(x);
                 }
@@ -72,7 +79,8 @@ public class DirectedCycle {
      * @return     True if has cycle, False otherwise.
      */
     public boolean hasCycle() {
-        return cycle != null;
+        return flag;
+        //return cycle != null;
     }
 
     /**
