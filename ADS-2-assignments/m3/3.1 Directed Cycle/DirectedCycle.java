@@ -60,13 +60,13 @@ public class DirectedCycle {
                 dfs(graph, w);
             } else if (onStack[w]) {
 
-                cycle = new Stack<Integer>();
+                //cycle = new Stack<Integer>();
                 flag = true;
-                for (int x = v; x != w; x = edgeTo[x]) {
+                /*for (int x = v; x != w; x = edgeTo[x]) {
                     cycle.push(x);
                 }
                 cycle.push(w);
-                cycle.push(v);
+                cycle.push(v);*/
 
             }
         }
