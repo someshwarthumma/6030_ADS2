@@ -11,9 +11,12 @@ class PageRank {
 	PageRank(Digraph gr, HashMap <Integer, ArrayList<Integer>> revMap) {
 		this.revMap = revMap;
 		this.g = gr;
-		this.vertices = gr.V();
+		this.vertices = g.V();
+		pgRank = new Double[vertices];
+		int ver = g.V();
 		for (int i = 0; i < vertices; i++) {
-			pgRank[i] = 1.0 / vertices;
+			//System.out.println("Vertex: "+ i);
+			pgRank[i] = 1.0 / ver;
 		}
 	}
 
@@ -48,7 +51,9 @@ class PageRank {
 	}
 
 	public void printer(){
-
+		for(int i =0 ; i< vertices; i++){
+			System.out.println(i+" - "+pgRank[i]);
+		}
 	}
 }
 
@@ -95,10 +100,10 @@ public class Solution {
 		// to read the adjacency list from std input
 		// and build the graph
 		
-		System.out.println(noOfVertices+" vertices, "+count+" edges");
-		System.out.println("ITs done");
+		//System.out.println(noOfVertices+" vertices, "+count+" edges");
+		//System.out.println("ITs done");
 		System.out.println(g.toString());
-		System.out.println("ITs done");
+		//System.out.println("ITs done");
 
 		PageRank pageRankObj = new PageRank(g, revMap);
 
