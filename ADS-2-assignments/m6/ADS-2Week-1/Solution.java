@@ -50,9 +50,6 @@ class PageRank {
 	public void printer(){
 
 	}
-
-
-
 }
 
 class WebSearch {
@@ -101,6 +98,7 @@ public class Solution {
 		System.out.println(noOfVertices+" vertices, "+count+" edges");
 		System.out.println("ITs done");
 		g.toString();
+		System.out.println("ITs done");
 
 		PageRank pageRankObj = new PageRank(g, revMap);
 
