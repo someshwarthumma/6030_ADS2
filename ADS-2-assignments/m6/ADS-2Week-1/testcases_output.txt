@@ -13,9 +13,10 @@ Expected Output:
 
 Your Output: 
 4 vertices, 5 edges
+ITs done
 Exception in thread "main" java.lang.NullPointerException
 	at PageRank.<init>(Solution.java:16)
-	at Solution.main(Solution.java:104)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -33,9 +34,10 @@ Expected Output:
 
 Your Output: 
 4 vertices, 6 edges
+ITs done
 Exception in thread "main" java.lang.NullPointerException
 	at PageRank.<init>(Solution.java:16)
-	at Solution.main(Solution.java:104)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -53,9 +55,10 @@ Expected Output:
 
 Your Output: 
 4 vertices, 8 edges
+ITs done
 Exception in thread "main" java.lang.NullPointerException
 	at PageRank.<init>(Solution.java:16)
-	at Solution.main(Solution.java:104)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -81,9 +84,10 @@ Expected Output:
 
 Your Output: 
 8 vertices, 14 edges
+ITs done
 Exception in thread "main" java.lang.NullPointerException
 	at PageRank.<init>(Solution.java:16)
-	at Solution.main(Solution.java:104)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -105,9 +109,10 @@ Expected Output:
 
 Your Output: 
 6 vertices, 8 edges
+ITs done
 Exception in thread "main" java.lang.NullPointerException
 	at PageRank.<init>(Solution.java:16)
-	at Solution.main(Solution.java:104)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -133,9 +138,10 @@ Expected Output:
 
 Your Output: 
 8 vertices, 10 edges
+ITs done
 Exception in thread "main" java.lang.NullPointerException
 	at PageRank.<init>(Solution.java:16)
-	at Solution.main(Solution.java:104)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -153,9 +159,10 @@ Expected Output:
 
 Your Output: 
 4 vertices, 4 edges
+ITs done
 Exception in thread "main" java.lang.NullPointerException
 	at PageRank.<init>(Solution.java:16)
-	at Solution.main(Solution.java:104)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -177,9 +184,10 @@ Expected Output:
 
 Your Output: 
 6 vertices, 6 edges
+ITs done
 Exception in thread "main" java.lang.NullPointerException
 	at PageRank.<init>(Solution.java:16)
-	at Solution.main(Solution.java:104)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -197,9 +205,10 @@ Expected Output:
 
 Your Output: 
 4 vertices, 12 edges
+ITs done
 Exception in thread "main" java.lang.NullPointerException
 	at PageRank.<init>(Solution.java:16)
-	at Solution.main(Solution.java:104)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -221,9 +230,10 @@ Expected Output:
 
 Your Output: 
 6 vertices, 14 edges
+ITs done
 Exception in thread "main" java.lang.NullPointerException
 	at PageRank.<init>(Solution.java:16)
-	at Solution.main(Solution.java:104)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -237,9 +247,10 @@ Expected Output:
 
 Your Output: 
 2 vertices, 2 edges
+ITs done
 Exception in thread "main" java.lang.NullPointerException
 	at PageRank.<init>(Solution.java:16)
-	at Solution.main(Solution.java:104)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -278,8 +289,9 @@ Expected Output:
 
 Your Output: 
 12 vertices, 22 edges
+ITs done
 Exception in thread "main" java.lang.NullPointerException
 	at PageRank.<init>(Solution.java:16)
-	at Solution.main(Solution.java:104)
+	at Solution.main(Solution.java:105)
 ----------------------------------------
 

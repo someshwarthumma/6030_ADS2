@@ -99,6 +99,7 @@ public class Solution {
 		// and build the graph
 		
 		System.out.println(noOfVertices+" vertices, "+count+" edges");
+		System.out.println("ITs done");
 		g.toString();
 
 		PageRank pageRankObj = new PageRank(g, revMap);

@@ -332,8 +332,8 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:101:63: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:101:68: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:101:69: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:107: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:118: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:108: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:119: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
 Checkstyle ends with 51 errors.
 Starting audit...
