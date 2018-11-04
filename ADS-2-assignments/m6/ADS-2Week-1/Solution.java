@@ -1,16 +1,18 @@
 import java.util.Scanner;
 import java.util.ArrayList;
-import java.util.HashMap;
+//import java.util.HashMap;
 class PageRank {
 	Digraph g;
+	Digraph revG;
 	int vertices;
 	Double[] pgRank;
-	HashMap <Integer, ArrayList<Integer>> revMap;
+	//HashMap <Integer, ArrayList<Integer>> revMap;
 
 
-	PageRank(Digraph gr, HashMap <Integer, ArrayList<Integer>> revMap) {
-		this.revMap = revMap;
+	PageRank(Digraph gr) {
+		//this.revMap = revMap;
 		this.g = gr;
+		this.revG = g.reverse();
 		this.vertices = g.V();
 		pgRank = new Double[vertices];
 		int ver = g.V();
@@ -32,14 +34,12 @@ class PageRank {
 		}
 		for (int k = 0; k < 1000; k++) {
 			for (int i = 0; i < vertices; i++) {
-				ArrayList<Integer> inList = revMap.get(i);
+				//ArrayList<Integer> inList = revMap.get(i);
 				Double sum = pgRank[i];
 
 				//int listSize = inList.size();
-				for (int j = 0; j < vertices; j++) {
-					if (inList.contains(j)) {
-						sum = sum + pgRank[j] / g.outdegree(j);
-					}
+				for (int each: revG.adj(i)) {
+					sum = sum + pgRank[each] / g.outdegree(each);
 				}
 				pgRank[i] = sum;
 			}
@@ -63,7 +63,7 @@ class WebSearch {
 
 
 public class Solution {
-	static HashMap <Integer, ArrayList<Integer>> revMap = new HashMap <Integer, ArrayList<Integer>>();
+	//static HashMap <Integer, ArrayList<Integer>> revMap = new HashMap <Integer, ArrayList<Integer>>();
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		// read the first line of the input to get the number of vertices
@@ -78,7 +78,7 @@ public class Solution {
 			for (int j = 1 ; j < tokens.length; j++) {
 				int id = Integer.parseInt(tokens[0]);
 				int child = Integer.parseInt(tokens[j]);
-				if (revMap.containsKey(child)) {
+				/*if (revMap.containsKey(child)) {
 					ArrayList<Integer> arr = revMap.get(child);
 					if (!arr.contains(id)) {
 						arr.add(id);
@@ -88,7 +88,7 @@ public class Solution {
 					ArrayList<Integer> n = new ArrayList<Integer>();
 					n.add(id);
 					revMap.put(child, n);
-				}
+				}*/
 				g.addEdge(id, child);
 				count++;
 				bag.add(j);
@@ -105,7 +105,7 @@ public class Solution {
 		System.out.println(g.toString());
 		//System.out.println("ITs done");
 
-		PageRank pageRankObj = new PageRank(g, revMap);
+		PageRank pageRankObj = new PageRank(g);
 
 
 		// Create page rank object and pass the graph object to the constructor
