@@ -1,15 +1,33 @@
 import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.Arrays;
 //import java.util.HashMap;
+
+/**.
+ * class to find the pagerank
+ */
 class PageRank {
+	/**.
+	 * graph as g
+	 */
 	Digraph g;
+	/**.
+	 * reverse of the given graph as revG
+	 */
 	Digraph revG;
+	/**.
+	 * variable for vertices
+	 */
 	int vertices;
+	/**.
+	 * array to store the pageRanks
+	 */
 	Double[] pgRank;
 	//HashMap <Integer, ArrayList<Integer>> revMap;
 
-
+	/**.
+	 * constructor
+	 *
+	 * @param      gr    The graphics
+	 */
 	PageRank(Digraph gr) {
 		//this.revMap = revMap;
 		this.g = gr;
@@ -23,7 +41,9 @@ class PageRank {
 		}
 		calcPageRank();
 	}
-
+	/**.
+	 * method to calculate the page Rank
+	 */
 	public void calcPageRank() {
 		for (int i = 0; i < vertices; i++) {
 			if (g.outdegree(i) == 0) {
@@ -36,7 +56,7 @@ class PageRank {
 		}
 		int count = 0;
 		for (int k = 1; k < 1000; k++) {
-			if(count == 5){
+			if (count == 5) {
 				break;
 			}
 			Double[] tempPR = new Double[vertices];
@@ -45,7 +65,7 @@ class PageRank {
 				Double sum = 0.00000000000000000000;
 
 				//int listSize = inList.size();
-				for (int each: g.reverse().adj(i)) {
+				for (int each : g.reverse().adj(i)) {
 					sum = sum + pgRank[each] / g.outdegree(each);
 				}
 				tempPR[i] = sum;
@@ -54,35 +74,61 @@ class PageRank {
 			}
 			//System.out.println("PGRANk: "+Arrays.toString(pgRank));
 			//System.out.println("tempPR: "+Arrays.toString(tempPR));
-			if(pgRank.equals(tempPR)){
+			if (pgRank.equals(tempPR)) {
 				System.out.println("equals");
 				count++;
 			}
 			pgRank = tempPR;
-			// System.out.println("for k: "+k+" -- Array: "+Arrays.toString(pgRank));
+			// System.out.println("for k: "+k+" -- Array
+			//: "+Arrays.toString(pgRank));
 		}
 	}
-
-	public Double getPageRank(int v){
+	/**.
+	 * method to get the page rank for the given page rank
+	 *
+	 * @param      v     { vertices of type int }
+	 *
+	 * @return     The page rank.
+	 */
+	public Double getPageRank(int v) {
 		//calcPageRank();
 		return pgRank[v];
 	}
-
-	public void printer(){
-		for(int i =0 ; i< vertices; i++){
-			System.out.println(i+" - "+pgRank[i]);
+	/**.
+	 * method to printer
+	 */
+	public void printer() {
+		for (int i = 0 ; i < vertices; i++) {
+			System.out.println(i + " - " + pgRank[i]);
 		}
 	}
 }
-
+/**.
+ * class to for web search
+ */
 class WebSearch {
-
+//Websearch ckass
 }
 
-
-public class Solution {
-	//static HashMap <Integer, ArrayList<Integer>> revMap = new HashMap <Integer, ArrayList<Integer>>();
+/**.
+ * solution class
+ */
+final class Solution {
+	/**
+	 * constructor
+	 */
+	private Solution() {
+		//Constructor
+	}
+	/**.
+	 * main method to handle the input testcases
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
+		/**.
+		 * Scanner object
+		 */
 		Scanner s = new Scanner(System.in);
 		// read the first line of the input to get the number of vertices
 		//ArrayList<Bag<Integer>> list = new ArrayList<Bag<Integer>>();
@@ -117,7 +163,7 @@ public class Solution {
 		// iterate count of vertices times
 		// to read the adjacency list from std input
 		// and build the graph
-		
+
 		//System.out.println(noOfVertices+" vertices, "+count+" edges");
 		//System.out.println("ITs done");
 		System.out.println(g.toString());
@@ -126,7 +172,7 @@ public class Solution {
 		PageRank pageRankObj = new PageRank(g);
 
 
-		// Create page rank object and pass the graph object to the constructor
+		// Create page rank object to pass the graph object to the constructor
 		pageRankObj.printer();
 
 		// print the page rank object
