@@ -34,6 +34,7 @@ class PageRank {
 				}
 			}
 		}
+		Double[] tempPR = new Double[vertices];
 		for (int k = 1; k < 1000; k++) {
 			for (int i = 0; i < vertices; i++) {
 				//ArrayList<Integer> inList = revMap.get(i);
@@ -43,9 +44,11 @@ class PageRank {
 				for (int each: g.reverse().adj(i)) {
 					sum = sum + pgRank[each] / g.outdegree(each);
 				}
+				tempPR[i] = sum;
 				//System.out.println("for i: "+i+"-- sum: "+sum);
-				pgRank[i] = sum;
+				//pgRank[i] = sum;
 			}
+			pgRank = tempPR;
 			// System.out.println("for k: "+k+" -- Array: "+Arrays.toString(pgRank));
 		}
 	}
