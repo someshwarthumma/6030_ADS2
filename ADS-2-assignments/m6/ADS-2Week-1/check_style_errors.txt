@@ -284,6 +284,7 @@ Audit done.
 Checkstyle ends with 34 errors.
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:2:8: Unused import - java.util.ArrayList. [UnusedImports]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:3:8: Unused import - java.util.Arrays. [UnusedImports]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:5: Missing a Javadoc comment. [JavadocType]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
@@ -331,8 +332,6 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:85:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:85:33: Parameter args should be final. [FinalParameters]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:87: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:92:26: '=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:92:27: '=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:96:39: ';' is preceded with whitespace. [NoWhitespaceBefore]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:100: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:106: Line is longer than 80 characters (found 88). [LineLength]
@@ -340,7 +339,7 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:129: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:140: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 56 errors.
+Checkstyle ends with 55 errors.
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]

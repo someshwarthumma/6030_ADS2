@@ -42,7 +42,7 @@ class PageRank {
 			Double[] tempPR = new Double[vertices];
 			for (int i = 0; i < vertices; i++) {
 				//ArrayList<Integer> inList = revMap.get(i);
-				Double sum = 0.0;
+				Double sum = 0.00000000000000000000;
 
 				//int listSize = inList.size();
 				for (int each: g.reverse().adj(i)) {
@@ -85,14 +85,14 @@ public class Solution {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		// read the first line of the input to get the number of vertices
-		ArrayList<Bag<Integer>> list = new ArrayList<Bag<Integer>>();
+		//ArrayList<Bag<Integer>> list = new ArrayList<Bag<Integer>>();
 
 		int noOfVertices = Integer.parseInt(s.nextLine());
 		Digraph g = new Digraph(noOfVertices);
-		int count=0;
+		//int count=0;
 		for (int i = 0; i < noOfVertices; i++) {
 			String[] tokens = s.nextLine().split(" ");
-			Bag<Integer> bag = new Bag<Integer>();
+			//Bag<Integer> bag = new Bag<Integer>();
 			for (int j = 1 ; j < tokens.length; j++) {
 				int id = Integer.parseInt(tokens[0]);
 				int child = Integer.parseInt(tokens[j]);
@@ -108,10 +108,10 @@ public class Solution {
 					revMap.put(child, n);
 				}*/
 				g.addEdge(id, child);
-				count++;
-				bag.add(j);
+				//count++;
+				//bag.add(j);
 			}
-			list.add(bag);
+			//list.add(bag);
 
 		}
 		// iterate count of vertices times
