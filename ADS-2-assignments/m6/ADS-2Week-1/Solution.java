@@ -40,7 +40,7 @@ class PageRank {
 				Double sum = 0.0;
 
 				//int listSize = inList.size();
-				for (int each: revG.adj(i)) {
+				for (int each: g.reverse().adj(i)) {
 					sum = sum + pgRank[each] / g.outdegree(each);
 				}
 				//System.out.println("for i: "+i+"-- sum: "+sum);
