@@ -54,30 +54,35 @@ class PageRank {
 				}
 			}
 		}
-		int count = 0;
+		//int count = 0;
+
 		for (int k = 1; k < 1000; k++) {
-			if (count == 5) {
+			/*if (count == 5) {
 				break;
-			}
+			}*/
 			Double[] tempPR = new Double[vertices];
 			for (int i = 0; i < vertices; i++) {
 				//ArrayList<Integer> inList = revMap.get(i);
-				Double sum = 0.00000000000000000000;
+				Double sum = 0.0;
 
 				//int listSize = inList.size();
 				for (int each : g.reverse().adj(i)) {
-					sum = sum + pgRank[each] / g.outdegree(each);
+					sum = sum +
+					pgRank[each] / g.outdegree(each);
 				}
 				tempPR[i] = sum;
-				//System.out.println("for i: "+i+"-- sum: "+sum);
+				//System.out.println("for i: "
+				//+i+"-- sum: "+sum);
 				//pgRank[i] = sum;
 			}
-			//System.out.println("PGRANk: "+Arrays.toString(pgRank));
-			//System.out.println("tempPR: "+Arrays.toString(tempPR));
-			if (pgRank.equals(tempPR)) {
+			//System.out.println("PGRANk: "
+			//+Arrays.toString(pgRank));
+			//System.out.println("tempPR: "
+			//+Arrays.toString(tempPR));
+			/*if (pgRank.equals(tempPR)) {
 				System.out.println("equals");
 				count++;
-			}
+			}*/
 			pgRank = tempPR;
 			// System.out.println("for k: "+k+" -- Array
 			//: "+Arrays.toString(pgRank));
@@ -90,7 +95,7 @@ class PageRank {
 	 *
 	 * @return     The page rank.
 	 */
-	public Double getPageRank(int v) {
+	public Double getPageRank(final int v) {
 		//calcPageRank();
 		return pgRank[v];
 	}
@@ -98,7 +103,7 @@ class PageRank {
 	 * method to printer
 	 */
 	public void printer() {
-		for (int i = 0 ; i < vertices; i++) {
+		for (int i = 0; i < vertices; i++) {
 			System.out.println(i + " - " + pgRank[i]);
 		}
 	}
@@ -114,7 +119,7 @@ class WebSearch {
  * solution class
  */
 final class Solution {
-	/**
+	/**.
 	 * constructor
 	 */
 	private Solution() {
@@ -125,13 +130,15 @@ final class Solution {
 	 *
 	 * @param      args  The arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		/**.
 		 * Scanner object
 		 */
 		Scanner s = new Scanner(System.in);
-		// read the first line of the input to get the number of vertices
-		//ArrayList<Bag<Integer>> list = new ArrayList<Bag<Integer>>();
+		// read the first line of the 
+		// input to get the number of vertices
+		//ArrayList<Bag<Integer>> list =
+		//new ArrayList<Bag<Integer>>();
 
 		int noOfVertices = Integer.parseInt(s.nextLine());
 		Digraph g = new Digraph(noOfVertices);
@@ -139,17 +146,19 @@ final class Solution {
 		for (int i = 0; i < noOfVertices; i++) {
 			String[] tokens = s.nextLine().split(" ");
 			//Bag<Integer> bag = new Bag<Integer>();
-			for (int j = 1 ; j < tokens.length; j++) {
+			for (int j = 1; j < tokens.length; j++) {
 				int id = Integer.parseInt(tokens[0]);
 				int child = Integer.parseInt(tokens[j]);
 				/*if (revMap.containsKey(child)) {
-					ArrayList<Integer> arr = revMap.get(child);
+					ArrayList<Integer> arr = 
+					revMap.get(child);
 					if (!arr.contains(id)) {
 						arr.add(id);
 						revMap.put(child, arr);
 					}
 				} else {
-					ArrayList<Integer> n = new ArrayList<Integer>();
+					ArrayList<Integer> n = 
+					new ArrayList<Integer>();
 					n.add(id);
 					revMap.put(child, n);
 				}*/
@@ -164,7 +173,8 @@ final class Solution {
 		// to read the adjacency list from std input
 		// and build the graph
 
-		//System.out.println(noOfVertices+" vertices, "+count+" edges");
+		//System.out.println(
+		//noOfVertices+" vertices, "+count+" edges");
 		//System.out.println("ITs done");
 		System.out.println(g.toString());
 		//System.out.println("ITs done");
@@ -172,7 +182,8 @@ final class Solution {
 		PageRank pageRankObj = new PageRank(g);
 
 
-		// Create page rank object to pass the graph object to the constructor
+		// Create page rank object to
+		//pass the graph object to the constructor
 		pageRankObj.printer();
 
 		// print the page rank object
@@ -183,7 +194,8 @@ final class Solution {
 		String file = "WebContent.txt";
 
 		// instantiate web search object
-		// and pass the page rank object and the file path to the constructor
+		// and pass the page rank object
+		// and the file path to the constructor
 
 		// read the search queries from std in
 		// remove the q= prefix and extract the search word
