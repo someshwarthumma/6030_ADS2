@@ -34,8 +34,11 @@ class PageRank {
 				}
 			}
 		}
-		
+		int count = 0;
 		for (int k = 0; k < 1000; k++) {
+			if(count == 5){
+				break;
+			}
 			Double[] tempPR = new Double[vertices];
 			for (int i = 0; i < vertices; i++) {
 				//ArrayList<Integer> inList = revMap.get(i);
@@ -51,6 +54,9 @@ class PageRank {
 			}
 			//System.out.println("PGRANk: "+Arrays.toString(pgRank));
 			//System.out.println("tempPR: "+Arrays.toString(tempPR));
+			if(pgRank.equals(tempPR)){
+				count++;
+			}
 			pgRank = tempPR;
 			// System.out.println("for k: "+k+" -- Array: "+Arrays.toString(pgRank));
 		}
