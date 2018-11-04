@@ -35,7 +35,7 @@ class PageRank {
 			}
 		}
 		int count = 0;
-		for (int k = 1; k < 1000; k++) {
+		for (int k = 0; k < 1000; k++) {
 			if(count == 5){
 				break;
 			}
