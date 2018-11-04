@@ -284,20 +284,9 @@ Audit done.
 Checkstyle ends with 34 errors.
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:8:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:11:17: Variable 'g' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:15:17: Variable 'revG' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:19:13: Variable 'vertices' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:23:18: Variable 'pgRank' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:31:18: Parameter gr should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:50:61: ';' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:59:37: '1000' is a magic number. [MagicNumber]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:70:51: '+' should be on a new line. [OperatorWrap]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:138: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:153: Line has trailing spaces. [RegexpSingleline]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:160: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:71:22: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
