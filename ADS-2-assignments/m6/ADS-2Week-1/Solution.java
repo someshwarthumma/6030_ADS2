@@ -35,7 +35,7 @@ class PageRank {
 			}
 		}
 		
-		for (int k = 1; k < 1000; k++) {
+		for (int k = 0; k < 1000; k++) {
 			Double[] tempPR = new Double[vertices];
 			for (int i = 0; i < vertices; i++) {
 				//ArrayList<Integer> inList = revMap.get(i);
