@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Arrays;
 //import java.util.HashMap;
 class PageRank {
 	Digraph g;
@@ -20,6 +21,7 @@ class PageRank {
 			//System.out.println("Vertex: "+ i);
 			pgRank[i] = 1.0 / ver;
 		}
+		calcPageRank();
 	}
 
 	public void calcPageRank() {
@@ -32,21 +34,24 @@ class PageRank {
 				}
 			}
 		}
-		for (int k = 0; k < 1000; k++) {
+		for (int k = 1; k < 1000; k++) {
 			for (int i = 0; i < vertices; i++) {
 				//ArrayList<Integer> inList = revMap.get(i);
-				Double sum = pgRank[i];
+				Double sum = 0.0;
 
 				//int listSize = inList.size();
 				for (int each: revG.adj(i)) {
 					sum = sum + pgRank[each] / g.outdegree(each);
 				}
+				//System.out.println("for i: "+i+"-- sum: "+sum);
 				pgRank[i] = sum;
 			}
+			// System.out.println("for k: "+k+" -- Array: "+Arrays.toString(pgRank));
 		}
 	}
 
 	public Double getPageRank(int v){
+		//calcPageRank();
 		return pgRank[v];
 	}
 
