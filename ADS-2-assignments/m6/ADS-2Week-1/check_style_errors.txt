@@ -300,7 +300,7 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:13:18: Parameter gr should be final. [FinalParameters]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:27:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:30:61: ';' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:38:37: '999' is a magic number. [MagicNumber]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:38:37: '104' is a magic number. [MagicNumber]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:39:27: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:39:37: '5' is a magic number. [MagicNumber]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:39:39: '{' is not preceded with whitespace. [WhitespaceAround]
