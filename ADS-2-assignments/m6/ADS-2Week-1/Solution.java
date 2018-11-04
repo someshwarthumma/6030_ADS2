@@ -68,7 +68,7 @@ class PageRank {
                 //int listSize = inList.size();
                 for (int each : g.reverse().adj(i)) {
                     sum = sum
-                    +pgRank[each] / g.outdegree(each);
+                    + pgRank[each] / g.outdegree(each);
                 }
                 tempPR[i] = sum;
                 //System.out.println("for i: "
