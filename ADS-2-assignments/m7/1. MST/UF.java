@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Class for uf.
  */
 public class UF {
@@ -94,3 +94,4 @@ public class UF {
         count--;
     }
 }
+

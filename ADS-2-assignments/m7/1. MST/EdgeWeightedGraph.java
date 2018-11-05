@@ -1,40 +1,91 @@
+/**.
+ * medge weighted graph
+ */
 class EdgeWeightedGraph {
-	private static final String NEWLINE = System.getProperty("line.separator");
-	private int vertices;
-	private int edges;
-	private Bag<Edge>[] adj;
-	EdgeWeightedGraph(int ver){
-		this.vertices = ver;
-		this.edges = 0;
-		adj = (Bag<Edge>[]) new Bag[vertices];
-		for(int i=0; i< vertices; i++){
-			adj[i]= new Bag<Edge>();
-		}
-	}
-
-	public int vertices(){
-		return this.vertices;
-	}
-	public int noOfEdges(){
-		return this.edges;
-	}
-
-	public void addEdge(Edge e){
-		int first = e.either();
-		int sec = e.other(first);
-		adj[first].add(e);
-		adj[sec].add(e);
-		edges++;
-	}
-
-	public Iterable<Edge> adj(int v) {
+    /**.
+     * newline variable
+     */
+    private static final String NEWLINE = System.getProperty("line.separator");
+    /**.
+     * variable for vertices
+     */
+    private int vertices;
+    /**.
+     * variable for edges
+     */
+    private int edges;
+    /**.
+     * variable fo bag
+     */
+    private Bag<Edge>[] adj;
+    /**.
+     * constructor
+     *
+     * @param      ver   The version
+     */
+    EdgeWeightedGraph(int ver) {
+        this.vertices = ver;
+        this.edges = 0;
+        adj = (Bag<Edge>[]) new Bag[vertices];
+        for (int i = 0; i < vertices; i++) {
+            adj[i] = new Bag<Edge>();
+        }
+    }
+    /**.
+     * method to return the vertices count
+     *
+     * @return     { int }
+     */
+    public int vertices() {
+        return this.vertices;
+    }
+    /**.
+     * method to return the edges count
+     *
+     * @return     { int }
+     */
+    public int noOfEdges() {
+        return this.edges;
+    }
+    /**.
+     * method to add the edge
+     *
+     * @param      e     { Edge }
+     */
+    public void addEdge(Edge e) {
+        int first = e.either();
+        int sec = e.other(first);
+        adj[first].add(e);
+        adj[sec].add(e);
+        edges++;
+    }
+    /**.
+     * Iterable adj
+     *
+     * @param      v     { int }
+     *
+     * @return     { Iterator }
+     */
+    public Iterable<Edge> adj(int v) {
         return adj[v];
     }
-    public int degree(int ver){
-    	return this.adj[ver].size();
+    /**.
+     * degree method
+     *
+     * @param      ver   The version
+     *
+     * @return     { int }
+     */
+    public int degree(int ver) {
+        return this.adj[ver].size();
     }
-    public Iterable<Edge> edges(){
-    	Bag<Edge> list = new Bag<Edge>();
+    /**.
+     * Iterable method for edges
+     *
+     * @return     { Iterator }
+     */
+    public Iterable<Edge> edges() {
+        Bag<Edge> list = new Bag<Edge>();
         for (int v = 0; v < vertices; v++) {
             int selfLoops = 0;
             for (Edge e : adj(v)) {
@@ -50,7 +101,11 @@ class EdgeWeightedGraph {
         }
         return list;
     }
-
+    /**.
+     * method to print the objects
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         StringBuilder s = new StringBuilder();
         s.append(vertices + " " + edges + NEWLINE);

@@ -62,7 +62,7 @@ class Edge implements Comparable<Edge> {
      *
      * @return     { int }
      */
-    public int compareTo(Edge that) {
+    public int compareTo(final Edge that) {
         return this.weight().compareTo(that.weight());
     }
 }

@@ -3,48 +3,18 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:65:26: Parameter that should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:2: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:2:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:2:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:3:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:4:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:5:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:6:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:6:27: Parameter ver should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:6:35: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:10:20: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:10:26: '=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:10:27: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:10:31: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:10:47: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:11:31: '=' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:15:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:15:30: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:18:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:18:31: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:22:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:22:29: Parameter e should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:22:36: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:30:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:30:35: Parameter v should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:33:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:33:23: Parameter ver should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:33:31: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:36:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:36:34: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:43:17: '}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:44: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:46: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:54:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:26:23: Parameter ver should be final. [FinalParameters]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:55:25: Parameter e should be final. [FinalParameters]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:69:31: Parameter v should be final. [FinalParameters]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:79:23: Parameter ver should be final. [FinalParameters]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:94:17: '}' at column 17 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:95: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:97: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 35 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\KruskalMST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\KruskalMST.java:1: Missing a Javadoc comment. [JavadocType]
@@ -74,6 +44,4 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\UF.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-Audit done.
 Checkstyle ends with 1 errors.
