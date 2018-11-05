@@ -1,8 +1,8 @@
 class KrushkalMST {
-	Double weight;
+	Double weight = 0.0;
 	private Queue<Edge> mst = new Queue<Edge>();
 	KrushkalMST(EdgeWeightedGraph g){
-		weight = 0.0;
+		//weight = 0.0;
 		MinPQ<Edge> pq = new MinPQ<Edge>();
 		for(Edge e: g.edges()){
 			pq.insert(e);
