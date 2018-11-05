@@ -14,6 +14,7 @@ class KrushkalMST {
 			int w = e.other(v);
 			if(!uf.connected(v, w)){
 				uf.union(v, w);
+				//this is mst
 				mst.enqueue(e);
 				weight += e.weight();
 			}
