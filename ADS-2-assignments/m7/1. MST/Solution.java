@@ -1,6 +1,8 @@
 import java.util.Scanner;
 /**.
  * solution class
+ * complexity is o((E*Log*E)N) as it reads the input
+ * and apply the krushkals algorithm
  */
 final class Solution {
     /**.
@@ -11,7 +13,8 @@ final class Solution {
     }
     /**.
      * main method
-     *
+     * complexity is o((E*Log*E)N) as it reads the input
+     * and apply the krushkals algorithm
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
