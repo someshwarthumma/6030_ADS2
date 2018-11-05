@@ -4,29 +4,9 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:1:39: '>' is followed by an illegal character. [GenericWhitespace]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:1:39: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:2:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:2:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:3:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:4:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:5:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:5:57: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:11:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:11:31: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:14:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:14:28: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:17:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:17:26: Parameter v should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:17:32: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:18:19: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:18:37: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:23:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:23:30: Parameter that should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:23:40: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\Edge.java:65:26: Parameter that should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:1: Missing a Javadoc comment. [JavadocType]
