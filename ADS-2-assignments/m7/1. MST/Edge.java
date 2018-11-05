@@ -28,6 +28,7 @@ class Edge implements Comparable<Edge> {
     }
     /**.
      * method to return the weight
+     * complexity is O(1)
      *
      * @return     { Double }
      */
@@ -36,6 +37,7 @@ class Edge implements Comparable<Edge> {
     }
     /**.
      * either method to return one vertex
+     * complexity is O(1)
      *
      * @return     { int }
      */
@@ -44,6 +46,7 @@ class Edge implements Comparable<Edge> {
     }
     /**.
      * other method to find the other vertex
+     * complexity is O(1)
      *
      * @param      v     { of type int }
      *
@@ -57,6 +60,7 @@ class Edge implements Comparable<Edge> {
     }
     /**.
      * method to compare the two Edge objects
+     * complexity is O(1)
      *
      * @param      that  The that
      *

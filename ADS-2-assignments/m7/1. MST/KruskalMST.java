@@ -1,5 +1,6 @@
 /**.
  * krushkal class for mst implimentation
+ * Complexity O(ElogE)
  */
 class KrushkalMST {
     /**.
@@ -12,6 +13,7 @@ class KrushkalMST {
     private Queue<Edge> mst = new Queue<Edge>();
     /**.
      * Krushkal constructor
+     * Complexity is O(E*logE)
      *
      * @param      g     { of type edge eighted graph }
      */
@@ -36,6 +38,7 @@ class KrushkalMST {
     }
     /**.
      * method to get the total weight
+     * complexity is O(1)
      *
      * @return     { Double }
      */
@@ -44,6 +47,7 @@ class KrushkalMST {
     }
     /**.
      * method to return the edges
+     * complexity is O(1)
      *
      * @return     { Iterator }
      */
