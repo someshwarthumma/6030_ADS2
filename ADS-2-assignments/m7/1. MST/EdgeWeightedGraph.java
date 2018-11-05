@@ -23,7 +23,7 @@ class EdgeWeightedGraph {
      *
      * @param      ver   The version
      */
-    EdgeWeightedGraph(int ver) {
+    EdgeWeightedGraph(final int ver) {
         this.vertices = ver;
         this.edges = 0;
         adj = (Bag<Edge>[]) new Bag[vertices];
@@ -52,7 +52,7 @@ class EdgeWeightedGraph {
      *
      * @param      e     { Edge }
      */
-    public void addEdge(Edge e) {
+    public void addEdge(final Edge e) {
         int first = e.either();
         int sec = e.other(first);
         adj[first].add(e);
@@ -66,7 +66,7 @@ class EdgeWeightedGraph {
      *
      * @return     { Iterator }
      */
-    public Iterable<Edge> adj(int v) {
+    public Iterable<Edge> adj(final int v) {
         return adj[v];
     }
     /**.
@@ -76,7 +76,7 @@ class EdgeWeightedGraph {
      *
      * @return     { int }
      */
-    public int degree(int ver) {
+    public int degree(final int ver) {
         return this.adj[ver].size();
     }
     /**.
@@ -91,10 +91,10 @@ class EdgeWeightedGraph {
             for (Edge e : adj(v)) {
                 if (e.other(v) > v) {
                     list.add(e);
-                }
-                // only add one copy of each self loop (self loops will be consecutive)
-                else if (e.other(v) == v) {
-                    if (selfLoops % 2 == 0) list.add(e);
+                } else if (e.other(v) == v) {
+                    if (selfLoops % 2 == 0) {
+                        list.add(e);
+                    }
                     selfLoops++;
                 }
             }
