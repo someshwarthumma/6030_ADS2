@@ -43,6 +43,7 @@ class PageRank {
     }
     /**.
      * method to calculate the page Rank
+     * Complexity is O(999*V^2)
      */
     public void calcPageRank() {
         for (int i = 0; i < vertices; i++) {
@@ -90,6 +91,7 @@ class PageRank {
     }
     /**.
      * method to get the page rank for the given page rank
+     * Complexity O(1)
      *
      * @param      v     { vertices of type int }
      *
@@ -101,6 +103,7 @@ class PageRank {
     }
     /**.
      * method to printer
+     * Complexity O(vertices)
      */
     public void printer() {
         for (int i = 0; i < vertices; i++) {
@@ -127,6 +130,7 @@ final class Solution {
     }
     /**.
      * main method to handle the input testcases
+     * Complexity O(N^2) since we have two loops
      *
      * @param      args  The arguments
      */
