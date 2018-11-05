@@ -1,5 +1,6 @@
 /**.
  * medge weighted graph
+ * Complexity is O(N)
  */
 class EdgeWeightedGraph {
     /**.
@@ -20,6 +21,7 @@ class EdgeWeightedGraph {
     private Bag<Edge>[] adj;
     /**.
      * constructor
+     * Complexity is O(N)
      *
      * @param      ver   The version
      */
@@ -33,6 +35,7 @@ class EdgeWeightedGraph {
     }
     /**.
      * method to return the vertices count
+     * Complexity is O(1)
      *
      * @return     { int }
      */
@@ -41,6 +44,7 @@ class EdgeWeightedGraph {
     }
     /**.
      * method to return the edges count
+     * Complexity is O(1)
      *
      * @return     { int }
      */
@@ -49,6 +53,7 @@ class EdgeWeightedGraph {
     }
     /**.
      * method to add the edge
+     * Complexity is O(1)
      *
      * @param      e     { Edge }
      */
@@ -61,6 +66,7 @@ class EdgeWeightedGraph {
     }
     /**.
      * Iterable adj
+     * Complexity is O(1)
      *
      * @param      v     { int }
      *
@@ -71,6 +77,7 @@ class EdgeWeightedGraph {
     }
     /**.
      * degree method
+     * Complexity is O(1)
      *
      * @param      ver   The version
      *
@@ -81,6 +88,7 @@ class EdgeWeightedGraph {
     }
     /**.
      * Iterable method for edges
+     * Complexity is O(N^2)
      *
      * @return     { Iterator }
      */
@@ -103,6 +111,7 @@ class EdgeWeightedGraph {
     }
     /**.
      * method to print the objects
+     * Complexity is O(N^2)
      *
      * @return     String representation of the object.
      */

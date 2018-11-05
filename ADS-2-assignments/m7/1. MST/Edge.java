@@ -1,5 +1,6 @@
 /**.
  * Edge class
+ * Complexty is O(1)
  */
 class Edge implements Comparable<Edge> {
     /**.
