@@ -12,11 +12,7 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:18:29: Parameter args should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:37:27: ',' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:47:37: '(' is preceded with whitespace. [MethodParamPad]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:56:37: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.

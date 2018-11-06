@@ -15,7 +15,7 @@ final class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         String[] details = s.nextLine().split(" ");
         int vertices = Integer.parseInt(details[0]);
@@ -34,7 +34,7 @@ final class Solution {
                 tok[0]), map.get(tok[1]),
             Double.parseDouble(tok[2])));
         }
-        shortestpath(graph , s, map);
+        shortestpath(graph, s, map);
     }
     /**.
      * method to read the query
@@ -44,7 +44,7 @@ final class Solution {
      * @param      s     { scanner}
      * @param      map   Hash map
      */
-    public static void shortestpath (
+    public static void shortestpath(
         final EdgeWeightedGraph g,
         final Scanner s,
         final HashMap<String, Integer> map) {
@@ -53,7 +53,7 @@ final class Solution {
             String[] tok = s.nextLine().split(" ");
             DijkstraUndirectedSP sp = new DijkstraUndirectedSP(
                 g, map.get(tok[0]));
-            System.out.println((int)sp.distTo(map.get(tok[1])));
+            System.out.println((int) sp.distTo(map.get(tok[1])));
         }
     }
 }
