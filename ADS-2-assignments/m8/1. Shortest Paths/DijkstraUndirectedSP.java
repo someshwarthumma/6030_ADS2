@@ -100,5 +100,5 @@ public class DijkstraUndirectedSP {
             x = e.other(x);
         }
         return path;
-    }   
+    }
 }
