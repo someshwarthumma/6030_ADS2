@@ -1,27 +1,6 @@
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraSP.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraSP.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraSP.java:2:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraSP.java:3:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraSP.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraSP.java:5:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraSP.java:5:23: Parameter g should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraSP.java:5:44: Parameter s should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraSP.java:10: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraSP.java:16: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraSP.java:21:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraSP.java:21:24: Parameter e should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraSP.java:26: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraSP.java:27: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraSP.java:27:28: '(' is preceded with whitespace. [MethodParamPad]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraSP.java:31:5: Class 'DijkstraSP' looks like designed for extension (can be subclassed), but the method 'distTo' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'DijkstraSP' final or making the method 'distTo' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraSP.java:31:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\DijkstraSP.java:31:26: Parameter v should be final. [FinalParameters]
-Audit done.
-Checkstyle ends with 18 errors.
-Starting audit...
 Audit done.
 Starting audit...
 Audit done.
@@ -33,20 +12,11 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:3: First sentence should end with a period. [JavadocStyle]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:6:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:12:33: Parameter args should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:17: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:25: Line is longer than 80 characters (found 110). [LineLength]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:27:35: ',' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:36: Line is longer than 80 characters (found 103). [LineLength]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:36:41: Parameter g should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:36:62: Parameter s should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:36:73: Parameter map should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:40: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:41:49: 'typecast' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:18:29: Parameter args should be final. [FinalParameters]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:37:27: ',' is preceded with whitespace. [NoWhitespaceBefore]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:47:37: '(' is preceded with whitespace. [MethodParamPad]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:56:37: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
 Audit done.
