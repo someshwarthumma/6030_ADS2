@@ -1,44 +1,45 @@
 import java.util.Iterator;
-/**
+/**.
  * Queue class.
  * @param      <Item>  The item
  */
 public class Queue<Item> implements Iterable<Item> {
-    /**
+    /**.
      * beginning of queue.
      */
     private Node<Item> first;
-    /**
+    /**.
      * end of queue.
      */
     private Node<Item> last;
-    /**
+    /**.
      * number of elements on queue.
      */
     private int n;
-    /**
+    /**.
      * Class for node.
      * @param      <Item>  The item
      */
     private static class Node<Item> {
-        /**
+        /**.
          * item of type Item.
          */
         private Item item;
-        /**
+        /**.
          * next of type Node.
          */
         private Node<Item> next;
     }
-    /**
+    /**.
      * Initializes an empty queue.
+     * Complexity O(1)
      */
     public Queue() {
         first = null;
         last  = null;
         n = 0;
     }
-    /**
+    /**.
      * Returns true if this queue is empty.
      * @return {@code true} if this queue
      * is empty; {@code false} otherwise
@@ -47,7 +48,7 @@ public class Queue<Item> implements Iterable<Item> {
     public boolean isEmpty() {
         return first == null;
     }
-    /**
+    /**.
      * Returns the number of items in this queue.
      * @return the number of items in this queue
      * Time complexity for this method is O(1).
@@ -55,7 +56,7 @@ public class Queue<Item> implements Iterable<Item> {
     public int size() {
         return n;
     }
-    /**
+    /**.
      * Returns the item least recently added to this queue.
      * @return the item least recently added to this queue
      * Time complexity for this method is O(1).
@@ -63,7 +64,7 @@ public class Queue<Item> implements Iterable<Item> {
     public Item peek() {
         return first.item;
     }
-    /**
+    /**.
      * Adds the item to this queue.
      * @param  item the item to add
      * Time complexity for this method is O(1).
@@ -80,7 +81,7 @@ public class Queue<Item> implements Iterable<Item> {
         }
         n++;
     }
-    /**
+    /**.
      * Removes and returns the item on this queue
      * that was least recently added.
      * @return the item on this queue that was least recently added
@@ -96,7 +97,7 @@ public class Queue<Item> implements Iterable<Item> {
         return item;
     }
 
-    /**
+    /**.
      * Returns a string representation of this queue.
      * @return the sequence of items in FIFO order, separated by spaces
      * Time complexity for this method is O(N).
@@ -109,7 +110,7 @@ public class Queue<Item> implements Iterable<Item> {
         }
         return s.toString();
     }
-    /**
+    /**.
      * Returns an iterator that iterates over the items
      * in this queue in FIFO order.
      * @return an iterator that iterates over the items
@@ -118,23 +119,23 @@ public class Queue<Item> implements Iterable<Item> {
     public Iterator<Item> iterator()  {
         return new ListIterator<Item>(first);
     }
-    /**
+    /**.
      * Class for list iterator.
      * @param      <Item>  The item
      */
     private class ListIterator<Item> implements Iterator<Item> {
-        /**
+        /**.
          * current of type Node.
          */
         private Node<Item> current;
-        /**
+        /**.
          * Constructs the object.
          * @param      f  The first
          */
         ListIterator(final Node<Item> f) {
             current = f;
         }
-        /**
+        /**.
          * Determines if it has next.
          * @return     True if has next, False otherwise.
          * Time complexity for this method is O(1).
@@ -142,13 +143,13 @@ public class Queue<Item> implements Iterable<Item> {
         public boolean hasNext() {
             return current != null;
         }
-        /**
+        /**.
          * remove method.
          */
         public void remove() {
             throw new UnsupportedOperationException();
         }
-        /**
+        /**.
          * returns the next item of the current item.
          * @return     item.
          * Time complexity for this method is O(1).

@@ -1,5 +1,6 @@
-/**
+/**.
  * Class for index minimum pq.
+ * Complexity O(N)
  *
  * @param      <Key>  The key
  */
@@ -24,8 +25,9 @@ public class IndexMinPQ<Key extends Comparable<Key>> {
      * { keys }
      */
     private Key[] keys;
-    /**
+    /**.
      * Constructs the object.
+     * Complexity O(N)
      *
      * @param      max  The maximum n
      */
@@ -39,8 +41,9 @@ public class IndexMinPQ<Key extends Comparable<Key>> {
             qp[i] = -1;
         }
     }
-    /**
+    /**.
      * Determines if empty.
+     * Complexity O(1)
      *
      * @return     True if empty, False otherwise.
      */
@@ -49,6 +52,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> {
     }
     /**.
      * { contains }
+     * Complexity O(1)
      *
      * @param      i     { i }
      *
@@ -59,6 +63,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> {
     }
     /**.
      * { size }
+     * Complexity O(1)
      *
      * @return     { size }
      */
@@ -67,6 +72,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> {
     }
     /**.
      * { insert }
+     * Complexity O(N)
      *
      * @param      i     { i }
      * @param      key   The key
@@ -80,6 +86,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> {
     }
     /**.
      * { del min }
+     * Complexity O(N) as it makes uses the sink method
      *
      * @return     { min item }
      */
@@ -95,6 +102,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> {
     }
     /**.
      * { decrease key }
+     * Complexity O(N) as it uses swim method
      *
      * @param      i     { i }
      * @param      key   The key
@@ -105,6 +113,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> {
     }
     /**.
      * { grater }
+     * Complexity O(1)
      *
      * @param      i     { i }
      * @param      j     { j }
@@ -116,6 +125,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> {
     }
     /**.
      * { exchanges }
+     * Complexity O(1)
      *
      * @param      i     { i }
      * @param      j     { j }
@@ -129,6 +139,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> {
     }
     /**.
      * { swim }
+     * Complexity O(N) since while loop
      *
      * @param      temp     { k }
      */
@@ -141,6 +152,7 @@ public class IndexMinPQ<Key extends Comparable<Key>> {
     }
     /**.
      * { sink }
+     * Complexity O(N) since while loop
      *
      * @param      temp     { k }
      */

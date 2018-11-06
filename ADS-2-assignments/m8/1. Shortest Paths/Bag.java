@@ -3,6 +3,7 @@ import java.util.NoSuchElementException;
 
 /**.
  * bag class
+ * Complexity O(1)
  *
  * @param      <Item>  The item
  */
@@ -31,6 +32,7 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**.
       * Create an empty stack.
+      * Complexity O(1)
       */
     public Bag() {
         first = null;
@@ -39,6 +41,7 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**.
      * method to check empty
+     * Complexity O(1)
      *
      * @return     True if empty, False otherwise.
      */
@@ -48,6 +51,7 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**.
      * size method
+     * Complexity O(1)
      *
      * @return     { int }
      */
@@ -56,7 +60,8 @@ public class Bag<Item> implements Iterable<Item> {
     }
 
     /**.
-     * { function_description }
+     * { method to add item }
+     * Complexity O(1)
      *
      * @param      item  Item
      */
@@ -71,6 +76,7 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**.
      * Iterator
+     * Complexity O(1)
      *
      * @return     { Iterator }
      */
@@ -80,6 +86,7 @@ public class Bag<Item> implements Iterable<Item> {
 
     /**.
      * class LIste Iteraator
+     * Complexity O(1)
      */
     private class ListIterator implements Iterator<Item> {
         /**.
@@ -88,6 +95,7 @@ public class Bag<Item> implements Iterable<Item> {
         private Node current = first;
         /**.
          * method to check next
+         * Complexity O(1)
          *
          * @return     True if has next, False otherwise.
          */
@@ -95,15 +103,17 @@ public class Bag<Item> implements Iterable<Item> {
             return current != null;
         }
         /**.
-         * { function_description }
+         * { method to remove }
+         * Complexity O(1)
          */
         public void remove() {
             throw new UnsupportedOperationException();
         }
         /**.
          * method for next
+         * Complexity O(1)
          *
-         * @return     { description_of_the_return_value }
+         * @return     { Item }
          */
         public Item next() {
             if (!hasNext()) {

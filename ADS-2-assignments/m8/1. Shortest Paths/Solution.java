@@ -12,6 +12,7 @@ final class Solution {
     }
     /**.
      * main method
+     * Complexity is O(N) to read the inputs
      *
      * @param      args  The arguments
      */
@@ -39,7 +40,10 @@ final class Solution {
     /**.
      * method to read the query
      * and peform the operation
-     *
+     * Complexity is N*E*Log(V);
+     * N is no of inputs
+     * E = edges
+     * V = verteces
      * @param      g     { EdgeWeightedGraph }
      * @param      s     { scanner}
      * @param      map   Hash map
