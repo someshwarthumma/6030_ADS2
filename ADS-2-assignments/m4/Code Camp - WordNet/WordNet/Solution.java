@@ -9,7 +9,8 @@ public final class Solution {
         //empty constructor.
     }
     /**
-     * Client program.
+     * main method to handle the input testcases
+     * Complexity O(N)
      *
      * @param      args  The arguments
      */

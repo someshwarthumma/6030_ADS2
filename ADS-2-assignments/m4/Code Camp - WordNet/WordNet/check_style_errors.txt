@@ -36,8 +36,9 @@ Audit done.
 Checkstyle ends with 5 errors.
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Solution.java:11: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
