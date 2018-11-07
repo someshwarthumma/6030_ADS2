@@ -1,31 +1,30 @@
-//import java.util.List;
 import java.util.ArrayList;
-/**
+/**.
  * Class for word net.
  */
 public class WordNet {
-    /**
+    /**.
      * symbol table initializing.
      */
     private final LinearProbingHashST
     <String, ArrayList<Integer>> linearprobing;
-    /**
+    /**.
      * variable description.
      */
     private final ArrayList<String> synsetsId;
-    /**
+    /**.
      * variable description.
      */
     private final SAP sap;
-    /**
+    /**.
      * variable description.
      */
     private final Digraph graph;
-    /**
+    /**.
      * variable description.
      */
     private final int vertices;
-    /**
+    /**.
      * Constructs the object.
      *
      * @param      synsets    The synsets
@@ -41,8 +40,9 @@ public class WordNet {
         sap = new SAP(graph);
 
     }
-    /**
+    /**.
      * Reads a synset.
+     * Complexity is O(N^2)
      *
      * @param      synset     The synset
      */
@@ -72,8 +72,9 @@ public class WordNet {
         return vertices;
         // readHypernym(hypernym, digraph);
     }
-    /**
+    /**.
      * Reads a hypernym.
+     * Complexity is O(N^2)
      *
      * @param      hypernyms1  The hypernyms1
      */
@@ -90,8 +91,9 @@ public class WordNet {
 
     }
 
-    /**
+    /**.
      * gets the nouns.
+     * Complexity is O(1)
      *
      * @return  nouns.
      */
@@ -99,8 +101,9 @@ public class WordNet {
         return linearprobing.keys();
     }
 
-    /**
+    /**.
      * Determines if noun.
+     * Complexity is O(1)
      *
      * @param      word  The word
      *
@@ -112,9 +115,15 @@ public class WordNet {
         }
         return linearprobing.contains(word);
     }
-
-
-// distance between nounA and nounB (defined below)
+    /**.
+     * distance method
+     * Complexity is O(1)
+     *
+     * @param      nounA  The noun a
+     * @param      nounB  The noun b
+     *
+     * @return     { int }
+     */
     public int distance(final String nounA, final String nounB) {
         ArrayList<Integer> noun1 = linearprobing.get(nounA);
         ArrayList<Integer> noun2 = linearprobing.get(nounB);
@@ -124,10 +133,15 @@ public class WordNet {
         return sap.length(noun1, noun2);
 
     }
-
-//a synset (second field of synsets.txt) that
-// is the common ancestor of nounA and nounB
-//in a shortest ancestral path (defined below)
+    /**.
+     * sap method
+     * Complexity is O(1)
+     *
+     * @param      nounA  The noun a
+     * @param      nounB  The noun b
+     *
+     * @return     { String }
+     */
     public String sap(final String nounA, final String nounB) {
         ArrayList<Integer> noun1 = linearprobing.get(nounA);
         ArrayList<Integer> noun2 = linearprobing.get(nounB);
@@ -137,6 +151,10 @@ public class WordNet {
         int id = sap.ancestor(noun1, noun2);
         return synsetsId.get(id);
     }
+    /**.
+     * display method
+     * Complexity is O(N)
+     */
     public void display() {
 
         DirectedCycle directedCycle = new DirectedCycle(graph);
@@ -156,7 +174,6 @@ public class WordNet {
             System.out.println(graph.toString());
         }
     }
-
 // do unit testing of this class
 // public static void main(String[] args)
 }
