@@ -26,7 +26,7 @@ public final class Solution {
                 System.out.println(e.getMessage());
             }
             break;
-        case "Queres":
+        case "Queries":
             try {
                 WordNet wordnet1 = new WordNet(synsets,
                                           hypernyms);
