@@ -61,13 +61,19 @@ public class Solution {
 				//System.out.println("path found");
 				Double sum = 0.0;
 				ArrayList<Integer> list = new ArrayList<Integer>();
-				for(Edge e : djFV.pathTo(via)){
+				/*for(Edge e : djFV.pathTo(via)){
 					sum += e.weight();
 					int v = e.either();
 					list.add(e.other(v));
 				}
 				for(Edge e : djVT.pathTo(to)){
 					sum += e.weight();
+					int v = e.either();
+					list.add(e.other(v));
+				}*/
+				DijkstraUndirectedSP dj = new DijkstraUndirectedSP(graph , from);
+				for(Edge e: dj.pathTo(to)){
+					//sum += e.weight();
 					int v = e.either();
 					list.add(e.other(v));
 				}
