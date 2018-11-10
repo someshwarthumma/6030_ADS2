@@ -63,13 +63,13 @@ public class Solution {
 				ArrayList<Integer> list = new ArrayList<Integer>();
 				for(Edge e : djFV.pathTo(via)){
 					sum += e.weight();
-					int v = e.either();
-					list.add(e.other(v));
+					/*int v = e.either();
+					list.add(e.other(v));*/
 				}
 				for(Edge e : djVT.pathTo(to)){
 					sum += e.weight();
-					/*int v = e.either();
-					list.add(e.other(v));*/
+					int v = e.either();
+					list.add(e.other(v));
 				}
 				System.out.println(sum);
 				for(int j = 0; j< list.size()-1; j++){
