@@ -50,6 +50,17 @@ public class Solution {
 			// third is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			data = s.nextLine().split(" ");
+			from = Integer.parseInt(data[0]);
+			int via = Integer.parseInt(data[1]);
+			to = Integer.parseInt(data[2]);
+			DijkstraUndirectedSP djFV = new DijkstraUndirectedSP(graph , from);
+			DijkstraUndirectedSP djVT = new DijkstraUndirectedSP(graph , via);
+			if(djFV.hasPathTo(via) && djVT.hasPathTo(to)){
+				System.out.println("path found");
+			} else {
+				System.out.println("No Path Found.");
+			}
 			break;
 
 		default:
