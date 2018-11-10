@@ -26,6 +26,7 @@ public class EdgeWeightedGraph {
     /**
      * Initializes an empty edge-weighted graph with {@code V}
      * vertices and 0 edges.
+     * Complexity (V)
      *
      * @param  vertices1 the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
@@ -46,6 +47,7 @@ public class EdgeWeightedGraph {
     }
     /**
      * Initializes a new edge-weighted graph that is a deep copy of {@code G}.
+     * Complexity (V^2)
      *
      * @param  g1 the edge-weighted graph to copy
      */
