@@ -73,7 +73,7 @@ public class Solution {
 					sum += e.weight();
 					int v = e.either();
 					int w = e.other(v);
-					list.add(v);
+					list.add(w);
 					//System.out.println("pt 2");
 				}
 				System.out.println(sum);
