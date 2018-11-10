@@ -68,12 +68,18 @@ public class Solution {
 					list.add(v);
 					//System.out.println("pt 1");
 				}
+				int fro = via;
+				int too;
+				/*for(int i =0; i< 4; i++){
+
+				}*/
 
 				for(Edge e : djVT.pathTo(to)){
 					sum += e.weight();
-					int v = e.either();
-					int w = e.other(v);
-					list.add(w);
+					//int v = e.either();
+					too = e.other(fro);
+					list.add(too);
+					fro = too;
 					//System.out.println("pt 2");
 				}
 				System.out.println(sum);
