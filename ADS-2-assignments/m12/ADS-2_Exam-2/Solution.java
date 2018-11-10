@@ -61,15 +61,20 @@ public class Solution {
 				//System.out.println("path found");
 				Double sum = 0.0;
 				ArrayList<Integer> list = new ArrayList<Integer>();
+				int fro = from;
+				int too;
+				list.add(from)
 				for (Edge e : djFV.pathTo(via)) {
 					sum += e.weight();
-					int v = e.either();
+					/*int v = e.either();
 					list.add(e.other(v));
-					list.add(v);
+					list.add(v);*/
+					too = e.other(fro);
+					list.add(too);
+					fro = too;
 					//System.out.println("pt 1");
 				}
-				int fro = via;
-				int too;
+				
 				/*for(int i =0; i< 4; i++){
 
 				}*/
