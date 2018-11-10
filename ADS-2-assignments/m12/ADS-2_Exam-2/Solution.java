@@ -81,11 +81,11 @@ public class Solution {
 					list.add(too);
 					fro = too;
 					count++;
-					if (count == 3) {
+					/*if (count == 3) {
 						too = e.other(fro);
 						list.add(too);
 						fro = too;
-					}
+					}*/
 					//System.out.println("pt 2");
 				}
 				System.out.println(sum);

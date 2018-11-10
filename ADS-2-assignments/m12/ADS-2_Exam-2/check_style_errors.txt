@@ -28,9 +28,8 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:59: Line is longer than 80 characters (found 90). [LineLength]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:59:83: ',' is preceded with whitespace. [NoWhitespaceBefore]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:63: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:84:54: '3' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 18 errors.
+Checkstyle ends with 17 errors.
 Starting audit...
 Audit done.
 Starting audit...
