@@ -73,13 +73,17 @@ public class Solution {
 				/*for(int i =0; i< 4; i++){
 
 				}*/
-
+				int count = 0;
 				for(Edge e : djVT.pathTo(to)){
 					sum += e.weight();
 					//int v = e.either();
 					too = e.other(fro);
 					list.add(too);
 					fro = too;
+					count++;
+					if(count==3){
+						list.add(too);
+					}
 					//System.out.println("pt 2");
 				}
 				System.out.println(sum);

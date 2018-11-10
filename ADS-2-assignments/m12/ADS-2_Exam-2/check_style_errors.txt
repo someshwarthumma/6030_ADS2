@@ -43,15 +43,20 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:64:63: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:77:36: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:77:62: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:86:36: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:86:49: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:86:62: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:86:63: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:86:70: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:87:69: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:87:70: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:84:43: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:84:49: '==' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:84:51: '3' is a magic number. [MagicNumber]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:84:51: '==' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:84:53: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:90:36: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:90:49: '<' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:90:62: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:90:63: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:90:70: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:91:69: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:91:70: '+' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 39 errors.
+Checkstyle ends with 44 errors.
 Starting audit...
 Audit done.
 Starting audit...
