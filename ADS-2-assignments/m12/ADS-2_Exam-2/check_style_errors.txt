@@ -1,0 +1,40 @@
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\EdgeWeightedGraph.java:170:49: '+' is not preceded with whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 1 errors.
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:2: Missing a Javadoc comment. [JavadocType]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:4:33: Parameter args should be final. [FinalParameters]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:11: Line is longer than 80 characters (found 81). [LineLength]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:13:20: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:13:28: '=' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:13:32: '<' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:13:44: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:13:48: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:28: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:35: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:35:82: ',' is preceded with whitespace. [NoWhitespaceBefore]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:36:27: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:36:46: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:38:36: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:38:60: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:48: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:49: Line is longer than 80 characters (found 110). [LineLength]
+Audit done.
+Checkstyle ends with 21 errors.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
