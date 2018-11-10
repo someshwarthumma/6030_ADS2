@@ -63,7 +63,7 @@ public class Solution {
 				ArrayList<Integer> list = new ArrayList<Integer>();
 				int fro = from;
 				int too;
-				list.add(from)
+				list.add(from);
 				for (Edge e : djFV.pathTo(via)) {
 					sum += e.weight();
 					/*int v = e.either();

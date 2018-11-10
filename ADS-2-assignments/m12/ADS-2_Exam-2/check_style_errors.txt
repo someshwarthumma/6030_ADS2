@@ -28,7 +28,7 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:59: Line is longer than 80 characters (found 90). [LineLength]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:59:83: ',' is preceded with whitespace. [NoWhitespaceBefore]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:63: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:76: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:77: Line has trailing spaces. [RegexpSingleline]
 Audit done.
 Checkstyle ends with 18 errors.
 Starting audit...
