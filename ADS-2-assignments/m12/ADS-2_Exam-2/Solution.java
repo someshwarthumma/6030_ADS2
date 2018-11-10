@@ -63,19 +63,24 @@ public class Solution {
 				ArrayList<Integer> list = new ArrayList<Integer>();
 				for(Edge e : djFV.pathTo(via)){
 					sum += e.weight();
-					/*int v = e.either();
-					list.add(e.other(v));*/
+					int v = e.either();
+					list.add(e.other(v));
+					list.add(v);
+					//System.out.println("pt 1");
 				}
+
 				for(Edge e : djVT.pathTo(to)){
 					sum += e.weight();
 					int v = e.either();
-					list.add(e.other(v));
+					int w = e.other(v);
+					list.add(v);
+					//System.out.println("pt 2");
 				}
 				System.out.println(sum);
 				for(int j = 0; j< list.size()-1; j++){
 					System.out.print(list.get(j)+" ");
 				}
-				System.out.println(list.get(list.size()-1));
+				//System.out.println(list.get(list.size()-1));
 
 			} else {
 				System.out.println("No Path Found.");
