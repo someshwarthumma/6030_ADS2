@@ -11,11 +11,11 @@ public class Solution {
 		int noOfRoads = Integer.parseInt(s.nextLine());
 		//System.out.println("Cities: "+noOfCities+" Roads: "+noOfRoads);
 		EdgeWeightedGraph graph = new EdgeWeightedGraph(noOfCities);
-		for(int i =0; i< noOfRoads;i++){
+		for (int i = 0; i < noOfRoads; i++) {
 			String[] tok = s.nextLine().split(" ");
 			graph.addEdge(new Edge(Integer.parseInt(tok[0]),
-				Integer.parseInt(tok[1]),
-				Double.parseDouble(tok[2])));
+			                       Integer.parseInt(tok[1]),
+			                       Double.parseDouble(tok[2])));
 		}
 
 		String caseToGo = s.nextLine();
@@ -34,9 +34,9 @@ public class Solution {
 			int from = Integer.parseInt(data[0]);
 			int to = Integer.parseInt(data[1]);
 			DijkstraUndirectedSP dij = new DijkstraUndirectedSP(graph , from);
-			if(dij.hasPathTo(to)){
+			if (dij.hasPathTo(to)) {
 				Double sum = 0.0;
-				for(Edge e: dij.pathTo(to)){
+				for (Edge e : dij.pathTo(to)) {
 					sum += e.weight();
 				}
 				System.out.println(sum);
@@ -57,11 +57,11 @@ public class Solution {
 			to = Integer.parseInt(data[2]);
 			DijkstraUndirectedSP djFV = new DijkstraUndirectedSP(graph , from);
 			DijkstraUndirectedSP djVT = new DijkstraUndirectedSP(graph , via);
-			if(djFV.hasPathTo(via) && djVT.hasPathTo(to)){
+			if (djFV.hasPathTo(via) && djVT.hasPathTo(to)) {
 				//System.out.println("path found");
 				Double sum = 0.0;
 				ArrayList<Integer> list = new ArrayList<Integer>();
-				for(Edge e : djFV.pathTo(via)){
+				for (Edge e : djFV.pathTo(via)) {
 					sum += e.weight();
 					int v = e.either();
 					list.add(e.other(v));
@@ -74,21 +74,23 @@ public class Solution {
 
 				}*/
 				int count = 0;
-				for(Edge e : djVT.pathTo(to)){
+				for (Edge e : djVT.pathTo(to)) {
 					sum += e.weight();
 					//int v = e.either();
 					too = e.other(fro);
 					list.add(too);
 					fro = too;
 					count++;
-					if(count==3){
+					if (count == 3) {
+						too = e.other(fro);
 						list.add(too);
+						fro = too;
 					}
 					//System.out.println("pt 2");
 				}
 				System.out.println(sum);
-				for(int j = 0; j< list.size()-1; j++){
-					System.out.print(list.get(j)+" ");
+				for (int j = 0; j < list.size() - 1; j++) {
+					System.out.print(list.get(j) + " ");
 				}
 				//System.out.println(list.get(list.size()-1));
 
