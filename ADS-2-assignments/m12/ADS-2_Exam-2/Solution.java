@@ -57,7 +57,15 @@ public class Solution {
 			DijkstraUndirectedSP djFV = new DijkstraUndirectedSP(graph , from);
 			DijkstraUndirectedSP djVT = new DijkstraUndirectedSP(graph , via);
 			if(djFV.hasPathTo(via) && djVT.hasPathTo(to)){
-				System.out.println("path found");
+				//System.out.println("path found");
+				Double sum = 0.0;
+				for(Edge e : djFV.pathTo(via)){
+					sum += e.weight();
+				}
+				for(Edge e : djVT.pathTo(to)){
+					sum += e.weight();
+				}
+				System.out.println(sum);
 			} else {
 				System.out.println("No Path Found.");
 			}
