@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 public class Solution {
 
 	public static void main(String[] args) {
@@ -59,13 +60,21 @@ public class Solution {
 			if(djFV.hasPathTo(via) && djVT.hasPathTo(to)){
 				//System.out.println("path found");
 				Double sum = 0.0;
+				ArrayList<Integer> list = new ArrayList<Integer>();
 				for(Edge e : djFV.pathTo(via)){
 					sum += e.weight();
+					list.add(e.either());
 				}
 				for(Edge e : djVT.pathTo(to)){
 					sum += e.weight();
+					list.add(e.either());
 				}
 				System.out.println(sum);
+				for(int j = 0; j< list.size()-1; j++){
+					System.out.print(list.get(j)+" ");
+				}
+				System.out.println(list.get(list.size()-1));
+
 			} else {
 				System.out.println("No Path Found.");
 			}
