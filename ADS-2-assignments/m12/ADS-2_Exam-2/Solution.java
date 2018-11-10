@@ -1,16 +1,16 @@
 import java.util.Scanner;
 import java.util.ArrayList;
-/**
+/**.
  * solution class
  */
 final class Solution {
     /**.
      * construtor
      */
-    private Solution(){
+    private Solution() {
         //This is construstor
     }
-    /**
+    /**.
      * main method
      *
      * @param      args  The arguments
@@ -88,7 +88,6 @@ final class Solution {
                     fro = too;
                     //System.out.println("pt 1");
                 }
-                
                 /*for(int i =0; i< 4; i++){
 
                 }*/
