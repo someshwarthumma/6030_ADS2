@@ -1,23 +1,24 @@
-/**
+/**.
  * Class for edge.
  */
 public class Edge implements Comparable<Edge> {
-    /**
+    /**.
      * Integer variable..
      */
     private final int v;
-    /**
+    /**.
      * Integer variable.
      */
     private final int w;
-    /**
+    /**.
      * double variable.
      */
     private final double weight;
 
-    /**
+    /**.
      * Initializes an edge between vertices {@code v} and {@code w} of
      * the given {@code weight}.
+     * Complexity (1)
      *
      * @param  v1 one vertex
      * @param  w1 the other vertex
@@ -43,8 +44,9 @@ public class Edge implements Comparable<Edge> {
         this.weight = weight1;
     }
 
-    /**
+    /**.
      * Returns the weight of this edge.
+     * Complexity (1)
      *
      * @return the weight of this edge
      */
@@ -52,8 +54,9 @@ public class Edge implements Comparable<Edge> {
         return weight;
     }
 
-    /**
+    /**.
      * Returns either endpoint of this edge.
+     * Complexity (1)
      *
      * @return either endpoint of this edge
      */
@@ -61,9 +64,10 @@ public class Edge implements Comparable<Edge> {
         return v;
     }
 
-    /**
+    /**.
      * Returns the endpoint of this edge that
      * is different from the given vertex.
+     * Complexity (1)
      *
      * @param  vertex one endpoint of this edge
      * @return the other endpoint of this edge
@@ -80,11 +84,12 @@ public class Edge implements Comparable<Edge> {
         }
     }
 
-    /**
+    /**.
      * Compares two edges by weight.
      * Note that {@code compareTo()} is not consistent with {@code equals()},
      * which uses the reference equality implementation
      * inherited from {@code Object}.
+     * Complexity (1)
      *
      * @param  that the other edge
      * @return a negative integer, zero, or positive integer
@@ -97,8 +102,9 @@ public class Edge implements Comparable<Edge> {
         return Double.compare(this.weight, that.weight);
     }
 
-    /**
+    /**.
      * Returns a string representation of this edge.
+     * Complexity (1)
      *
      * @return a string representation of this edge
      */
