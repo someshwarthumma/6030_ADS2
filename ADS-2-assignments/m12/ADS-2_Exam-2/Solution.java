@@ -63,7 +63,8 @@ public class Solution {
 				ArrayList<Integer> list = new ArrayList<Integer>();
 				for(Edge e : djFV.pathTo(via)){
 					sum += e.weight();
-					list.add(e.either());
+					int v = e.either();
+					list.add(e.other(v));
 				}
 				for(Edge e : djVT.pathTo(to)){
 					sum += e.weight();
