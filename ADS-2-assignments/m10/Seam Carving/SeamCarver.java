@@ -67,7 +67,8 @@ class SeamCarver {
      */
     public double energy(final int x, final int y) {
         if (x == 0 || x == picWidth - 1 || y == 0 || y == picHeight - 1) {
-            return 1000;
+            final double thou = 1000.0;
+            return thou;
         }
 
         double xRed = Math.abs(picture.get(x - 1, y).
@@ -97,12 +98,13 @@ class SeamCarver {
         int[][] edgeTo = new int[picHeight][picWidth];
         double[][] distTo = new double[picHeight][picWidth];
         initialise(distTo);
+        final double thou = 1000.0;
         for (int row = 0; row < picHeight; row++) {
-            distTo[row][0] = 1000;
+            distTo[row][0] = thou;
         }
         for (int col = 0; col < picWidth - 1; col++) {
             for (int row = 0; row < picHeight; row++) {
-                relaxH(row, col, edgeTo, distTo);
+                relaxH(row, col);
             }
         }
         double minDist = Double.MAX_VALUE;
@@ -128,8 +130,7 @@ class SeamCarver {
      * @param      edgeTo  The edge to
      * @param      distTo  The distance to
      */
-    private void relaxH(final int row, final int col,
-        final int[][] edgeTo, final double[][] distTo) {
+    private void relaxH(final int row, final int col) {
         int nextCol = col + 1;
         for (int i = -1; i <= 1; i++) {
             int nextRow = row + i;
@@ -165,13 +166,14 @@ class SeamCarver {
         if (picWidth == 1 || picHeight == 1) {
             return indices;
         }
+        final double thou = 1000.0;
         for (int i = 0; i < picWidth; i++) {
-            distTo[0][i] = 1000.0;
+            distTo[0][i] = thou;
         }
         // this is for relaxation.
         for (int i = 0; i < picHeight - 1; i++) {
             for (int j = 0; j < picWidth; j++) {
-                relaxV(i, j, edgeTo, distTo);
+                relaxV(i, j);
             }
         }
         // calculating from last row's coloumn
@@ -197,7 +199,7 @@ class SeamCarver {
      *
      * @param      distTo  The distance to
      */
-    private void initialise(double[][] distTo) {
+    private void initialise(final double[][] distTo) {
         for (int i = 0; i < distTo.length; i++) {
             for (int j = 0; j < distTo[i].length; j++) {
                 distTo[i][j] = Double.MAX_VALUE;
@@ -212,8 +214,7 @@ class SeamCarver {
      * @param      edgeTo  The edge to of type int array
      * @param      distTo  The distance to of type double array
      */
-    private void relaxV(final int row, final int col,
-        final int[][] edgeTo, final double[][] distTo) {
+    private void relaxV(final int row, final int col) {
         int nextRow = row + 1;
         for (int i = -1; i <= 1; i++) {
             int nextCol = col + i;
