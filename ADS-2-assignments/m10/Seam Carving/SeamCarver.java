@@ -1,32 +1,70 @@
-
-public class SeamCarver {
-	// create a seam carver object based on the given picture
-	int[][] edgeTo;
-	Double[][] distTo;
-	Picture picture;
-	int picHeight;
-	int picWidth;
+/**.
+ * seam carver class
+ */
+class SeamCarver {
+	/**.
+	 * edgeTo variable
+	 */
+	private int[][] edgeTo;
+	/**.
+	 * distTo variable
+	 */
+	private Double[][] distTo;
+	/**.
+	 * picture variable
+	 */
+	private Picture picture;
+	/**.
+	 * height variable
+	 */
+	private int picHeight;
+	/**.
+	 * width of the pic
+	 */
+	private int picWidth;
+	/**.
+	 * constructor
+	 *
+	 * @param      picture  The picture
+	 */
 	public SeamCarver(Picture picture) {
 		this.picture = picture;
 		this.picWidth = picture.width();
 		this.picHeight = picture.height();
 
 	}
-	// current picture
+	/**.
+	 * method to get the picture obj
+	 *
+	 * @return     { Picture }
+	 */
 	public Picture picture() {
 		return picture;
 	}
-	// width of current picture
+	/**.
+	 * width method to return the width of the pic
+	 *
+	 * @return     { int }
+	 */
 	public int width() {
 		return picWidth;
 	}
-
-	// height of current picture
+	/**.
+	 * getter method for height of the pic
+	 *
+	 * @return     { int }
+	 */
 	public int height() {
 		return picHeight;
 	}
-
-	// energy of pixel at column x and row y
+	/**.
+	 * method to find the energy
+	 *
+	 * @param      x     { x cordinate }
+	 * @param      y     { y cordinate }
+	 *
+	 * @return     { Energy in Double type }
+	 */
 	public double energy(int x, int y) {
 		if (x == 0 || x == picWidth - 1 || y == 0 || y == picHeight - 1) {
 			return 1000;
@@ -41,11 +79,17 @@ public class SeamCarver {
 		double total = xRed * xRed + xGreen * xGreen + xBlue * xBlue + yRed * yRed + yGreen * yGreen + yBlue * yBlue;
 		return Math.sqrt(total);
 	}
-	// sequence of indices for horizontal seam
+	/**.
+	 *sequence of indices for horizontal seam
+	 *
+	 *time complexity is O(w*h)
+	 *w is the width and h is the height
+	 * @return  sequence of indices of horizontal seam
+	 */
 	public int[] findHorizontalSeam() {
         int[][] edgeTo = new int[picHeight][picWidth];
         double[][] distTo = new double[picHeight][picWidth];
-        reset(distTo);
+        initialise(distTo);
         for (int row = 0; row < picHeight; row++) {
             distTo[row][0] = 1000;
         }
@@ -69,6 +113,14 @@ public class SeamCarver {
         }
         return indices;
     }
+    /**.
+     * private method for relax method
+     *
+     * @param      row     The row
+     * @param      col     The col
+     * @param      edgeTo  The edge to
+     * @param      distTo  The distance to
+     */
     private void relaxH(int row, int col, int[][] edgeTo, double[][] distTo) {
         int nextCol = col + 1;
         for (int i = -1; i <= 1; i++) {
@@ -86,11 +138,9 @@ public class SeamCarver {
             }
         }
     }
-	/**
-	 *this method is to find the vertical seam.
-	 *first of all find the shortest path from top to.
-	 *bottom.
-	 * .
+	/**.
+	 * Method to find the vertical seam
+	 * Complexity O( width * height)
 	 *
 	 * @return sequence of indices for vertical seam.
 	 */
@@ -98,7 +148,7 @@ public class SeamCarver {
 		double[][] energy = new double[picHeight][picWidth];
 		int[][] edgeTo = new int[picHeight][picWidth];
 		double[][] distTo = new double[picHeight][picWidth];
-		reset(distTo);
+		initialise(distTo);
 		int[] indices = new int[picHeight];
 		if(picWidth == 1 || picHeight == 1) {
 			return indices;
@@ -129,13 +179,27 @@ public class SeamCarver {
         indices[0] = indices[1];
         return indices;
     }
-	private void reset(double[][] distTo) {
+    /**.
+     * method to initialise the disto array
+     * complexity o(width * height )
+     *
+     * @param      distTo  The distance to
+     */
+	private void initialise(double[][] distTo) {
 		for(int i = 0; i < distTo.length; i++) {
 			for(int j = 0; j < distTo[i].length; j++) {
 				distTo[i][j] = Double.MAX_VALUE;
 			}
 		}
 	}
+	/**.
+	 * ralx method for vertical seam
+	 *
+	 * @param      row     The row of type int
+	 * @param      col     The col of type int
+	 * @param      edgeTo  The edge to of type int array
+	 * @param      distTo  The distance to of type double array
+	 */
 	private void relaxV(int row, int col, int[][] edgeTo, double[][] distTo) {
 		int nextRow = row + 1;
         for (int i = -1; i <= 1; i++) {
@@ -155,7 +219,12 @@ public class SeamCarver {
             }
     	}
 	}
-	// remove horizontal seam from current picture
+	/**.
+	 * method to remove the Horizontal seam
+	 * complexity o(width * height )
+	 *
+	 * @param      seam  The seam
+	 */
 	public void removeHorizontalSeam(int[] seam) {
 		//handle exceptions
 	for(int col = 0; col < picWidth; col++) {
@@ -165,7 +234,12 @@ public class SeamCarver {
 	}
 	picHeight--;
 	}
-	// remove vertical seam from current picture
+	/**.
+	 * methdo to remove the vertical seam
+	 * complexity o(width * height )
+	 *
+	 * @param      seam  The seam
+	 */
 	public void removeVerticalSeam(int[] seam) {
 	for(int row = 0; row < picHeight; row++) {
 		for(int col = seam[row]; col < picWidth - 1; col++) {

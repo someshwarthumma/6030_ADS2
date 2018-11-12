@@ -12,6 +12,8 @@ final class Solution {
     }
     /**.
      * method to print the energies
+     * time complexity is O(W * H)
+     * W is width and H is height
      *
      * @param      fileName  The file name
      */
@@ -33,6 +35,8 @@ final class Solution {
     }
     /**.
      * print seam method to print he seam
+     * time complexity is O(W * H)
+     * W is width and H is height
      *
      * @param      carver     The carver
      * @param      seam       The seam
