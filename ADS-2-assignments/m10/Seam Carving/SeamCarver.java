@@ -43,9 +43,24 @@ public class SeamCarver {
 	}
 	// sequence of indices for horizontal seam
 	public int[] findHorizontalSeam() {
+		Picture original = picture;
+        Picture transpose = new Picture(original.height(), original.width());
 
+        for (int w = 0; w < transpose.width(); w++) {
+            for (int h = 0; h < transpose.height(); h++) {
+                transpose.set(w, h, original.get(h, w));
+            }
+        }
 
-		return new int[0];
+        this.picture = transpose;
+
+        // call findVerticalSeam
+        int[] seam = findVerticalSeam();
+
+        // Transpose back.
+        this.picture = original;
+
+        return seam;
 	}
 
 	// sequence of indices for vertical seam
@@ -131,7 +146,12 @@ public class SeamCarver {
 }
 	// remove horizontal seam from current picture
 	public void removeHorizontalSeam(int[] seam) {
-		
+		for(int col = 0; col < picWidth; col++) {
+		for(int row = seam[col]; row < picHeight - 1; row++) {
+			this.picture.set(col, row, this.picture.get(col, row + 1));
+		}
+	}
+	picHeight--;
 	}
 
 	// remove vertical seam from current picture
