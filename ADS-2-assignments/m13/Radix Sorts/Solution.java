@@ -42,7 +42,7 @@ class LSD {
     /**.
      * Constructs the object.
      */
-    LSD() {
+    protected LSD() {
         //constructor
     }
     /**.
