@@ -53,6 +53,9 @@ public class SeamCarver {
 		int[] indices = new int[picHeight];
 		edgeTo = new int[picHeight][picWidth];
 		distTo = new Double[picHeight][picWidth];
+		if(picHeight <2 || picWidth < 2){
+			return indices;
+		}
 		for ( int height = 0; height < distTo.length; height++) {
 			for (int width = 0; width < distTo[height].length; width++) {
 				distTo[height][width] = Double.MAX_VALUE;
@@ -88,7 +91,9 @@ public class SeamCarver {
 	}
 
 	private void relaxVertical(int row, int col) {
-		int nextRow = row + 1;
+		int height = row;
+		int width = col;
+		/*int nextRow = row + 1;
         for (int i = -1; i <= 1; i++) {
             int nextCol = col + i;
             if (nextCol < 0 || nextCol >= picWidth) {
@@ -103,9 +108,9 @@ public class SeamCarver {
             if (distTo[nextRow][nextCol] > distTo[row][col] + energy(nextCol, nextRow)) {
                 distTo[nextRow][nextCol] = distTo[row][col] + energy(nextCol, nextRow);
                 edgeTo[nextRow][nextCol] = i;
-            }
+            }*/
 
-		/*int nextHeight = height + 1;
+		int nextHeight = height + 1;
 		int prevWidth = width - 1;
 		int nextWidth = width + 1;
 		Double distEnergy = distTo[height][width];
@@ -121,7 +126,7 @@ public class SeamCarver {
 		} else if ((prevWidth >= 0 && nextWidth < picWidth && distTo[nextHeight][width] >= distEnergy + e2)) {
 		distTo[nextHeight][width] = e2;
 			edgeTo[nextHeight][width] = width;
-		}*/
+		
 	}
 }
 	// remove horizontal seam from current picture
