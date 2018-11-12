@@ -43,25 +43,54 @@ public class SeamCarver {
 	}
 	// sequence of indices for horizontal seam
 	public int[] findHorizontalSeam() {
-		Picture original = picture;
-        Picture transpose = new Picture(original.height(), original.width());
-
-        for (int w = 0; w < transpose.width(); w++) {
-            for (int h = 0; h < transpose.height(); h++) {
-                transpose.set(w, h, original.get(h, w));
+		int[][] edgeTo = new int[picHeight][picWidth];
+        double[][] distTo = new double[picHeight][picWidth];
+        for(int i = 0; i < distTo.length; i++) {
+			for(int j = 0; j < distTo[i].length; j++) {
+				distTo[i][j] = Double.MAX_VALUE;
+			}
+		}
+        for (int row = 0; row < picHeight; row++) {
+            distTo[row][0] = 1000;
+        }
+        for (int col = 0; col < picWidth - 1; col++) {
+            for (int row = 0; row < picHeight; row++) {
+                relaxHorizontal(row, col);
             }
         }
-
-        this.picture = transpose;
-
-        // call findVerticalSeam
-        int[] seam = findVerticalSeam();
-
-        // Transpose back.
-        this.picture = original;
-
-        return seam;
+        double minDist = Double.MAX_VALUE;
+        int minRow = 0;
+        for (int row = 0; row < picHeight; row++) {
+            if (minDist > distTo[row][picWidth - 1]) {
+                minDist = distTo[row][picWidth - 1];
+                minRow = row;
+            } 
+        }
+        int[] indices = new int[picWidth];
+        for (int col = picWidth - 1, row = minRow; col >= 0; col--) {
+            indices[col] = row;
+            row -= edgeTo[row][col];
+        }
+        return indices;
 	}
+
+		private void relaxHorizontal(int row, int col) {
+        int nextCol = col + 1;
+        for (int i = -1; i <= 1; i++) {
+            int nextRow = row + i;
+            if (nextRow < 0 || nextRow >= picHeight) continue;
+            if(i == 0) {
+            	if(distTo[nextRow][nextCol] >= distTo[row][col]  + energy(nextCol, nextRow)) {
+	                distTo[nextRow][nextCol] = distTo[row][col]  + energy(nextCol, nextRow);
+	                edgeTo[nextRow][nextCol] = i;
+            	}
+            }
+            if (distTo[nextRow][nextCol] > distTo[row][col]  + energy(nextCol, nextRow)) {
+                distTo[nextRow][nextCol] = distTo[row][col]  + energy(nextCol, nextRow);
+                edgeTo[nextRow][nextCol] = i;
+            }
+        }
+    }
 
 	// sequence of indices for vertical seam
 	public int[] findVerticalSeam() {
@@ -146,30 +175,12 @@ public class SeamCarver {
 }
 	// remove horizontal seam from current picture
 	public void removeHorizontalSeam(int[] seam) {
-		Picture original = picture;
-        Picture transpose
-        = new Picture(original.height(),
-        	original.width());
-        for (int j = 0; j < transpose.width(); j++) {
-            for (int i = 0; i < transpose.height(); i++) {
-                transpose.set(j, i, original.get(i, j));
-            }
-        }
-        this.picture = transpose;
-        transpose = null;
-        original = null;
-        removeVerticalSeam(seam);
-        original = picture;
-        transpose = new Picture(original.height(),
-        	original.width());
-        for (int j = 0; j < transpose.width(); j++) {
-            for (int i = 0; i < transpose.height(); i++) {
-                transpose.set(j, i, original.get(i, j));
-            }
-        }
-        this.picture = transpose;
-        transpose = null;
-        original = null;
+		for(int col = 0; col < picWidth; col++) {
+		for(int row = seam[col]; row < picHeight - 1; row++) {
+			this.picture.set(col, row, this.picture.get(col, row + 1));
+		}
+	}
+	picHeight--;
 	}
 
 	// remove vertical seam from current picture
