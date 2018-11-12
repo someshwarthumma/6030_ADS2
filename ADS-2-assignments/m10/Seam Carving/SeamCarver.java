@@ -54,7 +54,7 @@ public class SeamCarver {
 		edgeTo = new int[picHeight][picWidth];
 		distTo = new Double[picHeight][picWidth];
 		for ( int height = 0; height < distTo.length; height++) {
-			for (int width = 0; width < distTo[0].length; width++) {
+			for (int width = 0; width < distTo[height].length; width++) {
 				distTo[height][width] = Double.MAX_VALUE;
 			}
 		}
@@ -64,7 +64,7 @@ public class SeamCarver {
 		}
 
 
-		for (int height = 0; height < picHeight; height++) {
+		for (int height = 0; height < picHeight-1 ; height++) {
 			for (int width = 0 ; width < picWidth ; width++) {
 				relaxVertical(height , width);
 			}
