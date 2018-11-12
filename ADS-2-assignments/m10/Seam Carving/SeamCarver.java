@@ -43,19 +43,15 @@ public class SeamCarver {
 	}
 	// sequence of indices for horizontal seam
 	public int[] findHorizontalSeam() {
-		int[][] edgeTo = new int[picHeight][picWidth];
+        int[][] edgeTo = new int[picHeight][picWidth];
         double[][] distTo = new double[picHeight][picWidth];
-        for(int i = 0; i < distTo.length; i++) {
-			for(int j = 0; j < distTo[i].length; j++) {
-				distTo[i][j] = Double.MAX_VALUE;
-			}
-		}
+        reset(distTo);
         for (int row = 0; row < picHeight; row++) {
             distTo[row][0] = 1000;
         }
         for (int col = 0; col < picWidth - 1; col++) {
             for (int row = 0; row < picHeight; row++) {
-                relaxHorizontal(row, col);
+                relaxH(row, col, edgeTo, distTo);
             }
         }
         double minDist = Double.MAX_VALUE;
@@ -71,11 +67,9 @@ public class SeamCarver {
             indices[col] = row;
             row -= edgeTo[row][col];
         }
-        indices[0] = indices[1];
         return indices;
-	}
-
-		private void relaxHorizontal(int row, int col) {
+    }
+    private void relaxH(int row, int col, int[][] edgeTo, double[][] distTo) {
         int nextCol = col + 1;
         for (int i = -1; i <= 1; i++) {
             int nextRow = row + i;
@@ -92,53 +86,57 @@ public class SeamCarver {
             }
         }
     }
-
-	// sequence of indices for vertical seam
+	/**
+	 *this method is to find the vertical seam.
+	 *first of all find the shortest path from top to.
+	 *bottom.
+	 * .
+	 *
+	 * @return sequence of indices for vertical seam.
+	 */
 	public int[] findVerticalSeam() {
+		double[][] energy = new double[picHeight][picWidth];
+		int[][] edgeTo = new int[picHeight][picWidth];
+		double[][] distTo = new double[picHeight][picWidth];
+		reset(distTo);
 		int[] indices = new int[picHeight];
-		return indices;
-		/*edgeTo = new int[picHeight][picWidth];
-		distTo = new Double[picHeight][picWidth];
-		if(picHeight <2 || picWidth < 2){
+		if(picWidth == 1 || picHeight == 1) {
 			return indices;
 		}
-		for ( int height = 0; height < distTo.length; height++) {
-			for (int width = 0; width < distTo[height].length; width++) {
-				distTo[height][width] = Double.MAX_VALUE;
+		for(int i = 0; i < picWidth; i++) {
+			distTo[0][i] = 1000.0;
+		}
+		// this is for relaxation.
+		for (int i = 0; i < picHeight - 1; i++) {
+			for(int j = 0; j < picWidth; j++) {
+				relaxV(i, j, edgeTo, distTo);
 			}
 		}
-
-		for (int width = 0; width < picWidth ; width++) {
-			distTo[0][width] = 1000.0;
-		}
-
-
-		for (int height = 0; height < picHeight-1 ; height++) {
-			for (int width = 0 ; width < picWidth ; width++) {
-				relaxVertical(height , width);
+		// calculating from last row's coloumn
+        double minDist = Double.MAX_VALUE;
+        int minCol = 0;
+        for (int col = 0; col < picWidth; col++) {
+            if (minDist > distTo[picHeight - 1][col]) {
+                minDist = distTo[picHeight - 1][col];
+                minCol = col;
+            }
+        }
+        //indices values of shortest path.
+        for (int row = picHeight -1, col = minCol; row >= 0; row--) {
+            indices[row] = col;
+            col -= edgeTo[row][col];
+        }
+        indices[0] = indices[1];
+        return indices;
+    }
+	private void reset(double[][] distTo) {
+		for(int i = 0; i < distTo.length; i++) {
+			for(int j = 0; j < distTo[i].length; j++) {
+				distTo[i][j] = Double.MAX_VALUE;
 			}
 		}
-
-		Double minDist = Double.MAX_VALUE;
-		int minWidth = 0;
-		for(int width = 0; width < picWidth ; width++){
-			if(minDist > distTo[picHeight - 1][width]) {
-				minDist = distTo[picHeight-1][width];
-				minWidth = width;
-			}
-		}
-		int trace = minWidth;
-		for(int height = picHeight -1; height >= 0; height-- ) {
-			indices[height] = trace;
-			trace -= edgeTo[height][trace];
-		}
-		indices[0] = indices[1];
-		return indices;*/
 	}
-
-	private void relaxVertical(int row, int col) {
-		int height = row;
-		int width = col;
+	private void relaxV(int row, int col, int[][] edgeTo, double[][] distTo) {
 		int nextRow = row + 1;
         for (int i = -1; i <= 1; i++) {
             int nextCol = col + i;
@@ -155,40 +153,21 @@ public class SeamCarver {
                 distTo[nextRow][nextCol] = distTo[row][col] + energy(nextCol, nextRow);
                 edgeTo[nextRow][nextCol] = i;
             }
-
-		/*int nextHeight = height + 1;
-		int prevWidth = width - 1;
-		int nextWidth = width + 1;
-		Double distEnergy = distTo[height][width];
-		Double e1 = energy(nextHeight , prevWidth);
-		Double e2 = energy(nextHeight , width);
-		Double e3 = energy(nextHeight, nextWidth);
-		if (prevWidth >= 0 && nextWidth < picWidth && distTo[nextHeight][prevWidth] > distEnergy + e1) {
-			distTo[nextHeight][prevWidth] = e1;
-			edgeTo[nextHeight][nextWidth] = width;
-		} else if ((prevWidth >= 0) && (nextWidth < picWidth) && (distTo[nextHeight][nextWidth] > distEnergy + e3)) {
-			distTo[nextHeight][nextWidth] = e3;
-			edgeTo[nextHeight][nextWidth] = width;
-		} else if ((prevWidth >= 0 && nextWidth < picWidth && distTo[nextHeight][width] >= distEnergy + e2)) {
-		distTo[nextHeight][width] = e2;
-			edgeTo[nextHeight][width] = width;
-		*/
+    	}
 	}
-}
 	// remove horizontal seam from current picture
 	public void removeHorizontalSeam(int[] seam) {
-		return;
-		/*for(int col = 0; col < picWidth; col++) {
+		//handle exceptions
+	for(int col = 0; col < picWidth; col++) {
 		for(int row = seam[col]; row < picHeight - 1; row++) {
 			this.picture.set(col, row, this.picture.get(col, row + 1));
 		}
 	}
-	picHeight--;*/
+	picHeight--;
 	}
-
 	// remove vertical seam from current picture
 	public void removeVerticalSeam(int[] seam) {
-		for(int row = 0; row < picHeight; row++) {
+	for(int row = 0; row < picHeight; row++) {
 		for(int col = seam[row]; col < picWidth - 1; col++) {
 		this.picture.set(col, row, this.picture.get(col + 1, row));
 		}
