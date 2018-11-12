@@ -17,7 +17,7 @@ final class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int num = Integer.parseInt(scan.nextLine());
         String[] arr = new String[num];
@@ -45,22 +45,29 @@ class LSD {
     LSD() {
         //constructor
     }
+    /**.
+     * sort method
+     *
+     * @param      a     { String array }
+     * @param      w     { int }
+     */
     public static void sort(final String[] a, final int w) {
         /**.
          * length of the given array
          */
         int n = a.length;
-        int R = 256;   // extend ASCII alphabet size
+        final int t = 256;
+        int re = t;   // extend ASCII alphabet size
         String[] aux = new String[n];
         for (int d = w - 1; d >= 0; d--) {
             // sort by key-indexed counting on dth character
             // compute frequency counts
-            int[] count = new int[R + 1];
+            int[] count = new int[re + 1];
             for (int i = 0; i < n; i++) {
                 count[a[i].charAt(d) + 1]++;
             }
             // compute cumulates
-            for (int r = 0; r < R; r++) {
+            for (int r = 0; r < re; r++) {
                 count[r + 1] += count[r];
             }
             // move data
