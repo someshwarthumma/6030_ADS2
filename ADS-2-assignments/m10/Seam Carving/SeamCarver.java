@@ -84,7 +84,7 @@ public class SeamCarver {
 		int trace = minWidth;
 		for(int height = picHeight -1; height >= 0; height-- ) {
 			indices[height] = trace;
-			trace -= edgeTo[height][trace];
+			trace = edgeTo[height][trace];
 		}
 		indices[0] = indices[1];
 		return indices;
