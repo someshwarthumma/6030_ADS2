@@ -346,29 +346,14 @@ Audit done.
 Checkstyle ends with 13 errors.
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:4: Missing a Javadoc comment. [JavadocType]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:4:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:6:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:6:38: Parameter fileName should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:8: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:15: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:21: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:21:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:21:34: Parameter carver should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:21:53: Parameter seam should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:21:65: Parameter direction should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:28:32: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:28:61: '||' should be on a new line. [OperatorWrap]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:29:36: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:43:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:43:29: Parameter args should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:48:15: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:48:36: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:79: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:87: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:105: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:10:23: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:28: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:48:32: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:49:35: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:72:15: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:72:36: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 22 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\StdOut.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\StdOut.java:16: Line is longer than 80 characters (found 84). [LineLength]
