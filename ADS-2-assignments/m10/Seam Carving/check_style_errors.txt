@@ -345,15 +345,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 13 errors.
 Starting audit...
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:10:23: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:28: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:48:32: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:49:35: Expression can be simplified. [SimplifyBooleanExpression]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:72:15: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\Solution.java:72:36: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\StdOut.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\StdOut.java:16: Line is longer than 80 characters (found 84). [LineLength]

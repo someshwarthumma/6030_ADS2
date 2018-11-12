@@ -7,7 +7,7 @@ final class Solution {
     /**.
      * Solution constructor
      */
-    private Solution(){
+    private Solution() {
         //This is constructor
     }
     /**.
@@ -25,8 +25,9 @@ final class Solution {
         StdOut.printf("Printing energy calculated for each pixel.\n");
 
         for (int row = 0; row < sc.height(); row++) {
-            for (int col = 0; col < sc.width(); col++)
+            for (int col = 0; col < sc.width(); col++) {
                 StdOut.printf("%9.0f ", sc.energy(col, row));
+            }
             StdOut.println();
         }
     }
@@ -45,8 +46,8 @@ final class Solution {
             for (int col = 0; col < carver.width(); col++) {
                 double energy = carver.energy(col, row);
                 String marker = " ";
-                if ((direction == true && row == seam[col])
-                    || (direction == false   && col == seam[row])) {
+                if ((direction && row == seam[col])
+                    || (!direction && col == seam[row])) {
                     marker = "*";
                     totalSeamEnergy += energy;
                 }
@@ -69,7 +70,7 @@ final class Solution {
         String cases = scan.nextLine();
         SeamCarver seamCarver = null;
         try {
-            if(cases.length() == 0){
+            if (cases.length() == 0) {
                 throw new Exception("picture is null");
             }
             switch (cases) {
