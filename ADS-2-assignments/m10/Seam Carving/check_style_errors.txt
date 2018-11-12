@@ -295,15 +295,16 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:120: Line is longer than 80 characters (found 112). [LineLength]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:123: Line is longer than 80 characters (found 125). [LineLength]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:126: Line is longer than 80 characters (found 118). [LineLength]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:133:9: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'removeHorizontalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'removeHorizontalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:133:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:133:42: Parameter seam should be final. [FinalParameters]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:134:20: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:135:20: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:143:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:143:40: Parameter seam should be final. [FinalParameters]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:134: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:138:9: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'removeVerticalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'removeVerticalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:138:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:138:40: Parameter seam should be final. [FinalParameters]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:139:20: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:140:20: 'for' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 80 errors.
+Checkstyle ends with 81 errors.
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\ShowEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m10\Seam Carving\ShowEnergy.java:5: Line has trailing spaces. [RegexpSingleline]
