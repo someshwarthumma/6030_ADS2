@@ -96,7 +96,8 @@ public class SeamCarver {
 	// sequence of indices for vertical seam
 	public int[] findVerticalSeam() {
 		int[] indices = new int[picHeight];
-		edgeTo = new int[picHeight][picWidth];
+		return indices;
+		/*edgeTo = new int[picHeight][picWidth];
 		distTo = new Double[picHeight][picWidth];
 		if(picHeight <2 || picWidth < 2){
 			return indices;
@@ -132,7 +133,7 @@ public class SeamCarver {
 			trace -= edgeTo[height][trace];
 		}
 		indices[0] = indices[1];
-		return indices;
+		return indices;*/
 	}
 
 	private void relaxVertical(int row, int col) {
@@ -176,12 +177,13 @@ public class SeamCarver {
 }
 	// remove horizontal seam from current picture
 	public void removeHorizontalSeam(int[] seam) {
-		for(int col = 0; col < picWidth; col++) {
+		return;
+		/*for(int col = 0; col < picWidth; col++) {
 		for(int row = seam[col]; row < picHeight - 1; row++) {
 			this.picture.set(col, row, this.picture.get(col, row + 1));
 		}
 	}
-	picHeight--;
+	picHeight--;*/
 	}
 
 	// remove vertical seam from current picture
