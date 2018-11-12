@@ -39,12 +39,12 @@ final class Solution {
  * N is the array length
  */
 class LSD {
-    /**.
-     * Constructs the object.
-     */
-    public LSD() {
-        //constructor
-    }
+    // /*/**.
+    //  * Constructs the object.
+    //  */
+    // private LSD() {
+    //     //constructor
+    // }*/
     /**.
      * sort method
      *
