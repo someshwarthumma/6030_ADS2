@@ -1,4 +1,8 @@
-
+/**
+ * tst class
+ *
+ * @param      <Value>  The value
+ */
 public class TST<Value> {
     /**.
      * variable for size
@@ -22,7 +26,7 @@ public class TST<Value> {
          * Node variable as left, mid, right
          */
         private Node<Value> left, mid, right;
-        /**
+        /**.
          * val variable
          */
         private Value val;
