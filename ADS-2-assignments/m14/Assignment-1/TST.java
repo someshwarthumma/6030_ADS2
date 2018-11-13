@@ -47,6 +47,9 @@ public class TST<Value> {
 
     /**.
      * Does this symbol table contain the given key?
+     * Complexity is O(L + Log(N))
+     * L= length of the string
+     * N = size of tst
      * @param key the key
      * @return {@code true} if this symbol table contains {@code key} and
      *     {@code false} otherwise
@@ -62,6 +65,9 @@ public class TST<Value> {
 
     /**.
      * Returns the value associated with the given key.
+     * Complexity is O(L + Log(N))
+     * L= length of the string
+     * N = no of inputs
      * @param key the key
      * @return the value associated with the
      * given key if the key is in the symbol table
@@ -85,6 +91,9 @@ public class TST<Value> {
     }
     /**.
      * { method to get the vlaue }
+     * Complexity is O(L + Log(N))
+     * L= length of the string
+     * N = no of inputs
      *
      * @param      x     { Node as X }
      * @param      key   The key
@@ -118,6 +127,9 @@ public class TST<Value> {
      * with the new value if the key is already in the symbol table.
      * If the value is {@code null}, this effectively
      * deletes the key from the symbol table.
+     * Complexity is O(L + Log(N))
+     * L= length of the string
+     * N = no of inputs
      * @param key the key
      * @param val the value
      * @throws IllegalArgumentException if {@code key} is {@code null}
@@ -133,6 +145,9 @@ public class TST<Value> {
     }
     /**.
      * put method for recursion
+     * Complexity is O(L + Log(N))
+     * L= length of the string
+     * N = no of inputs
      *
      * @param      x1    The x 1
      * @param      key   The key
@@ -165,6 +180,8 @@ public class TST<Value> {
      * Returns the string in the symbol table that is
      * the longest prefix of {@code query},
      * or {@code null}, if no such string.
+     * Complexity is O(L)
+     * L = length of the query
      * @param query the query string
      * @return the string in the symbol table
      * that is the longest prefix of {@code query},
@@ -203,6 +220,7 @@ public class TST<Value> {
      * Returns all keys in the symbol table as an {@code Iterable}.
      * To iterate over all of the keys in the symbol table named {@code st},
      * use the foreach notation: {@code for (Key key : st.keys())}.
+     * 
      * @return all keys in the symbol table as an {@code Iterable}
      */
     public Iterable<String> keys() {
@@ -213,6 +231,9 @@ public class TST<Value> {
 
     /**.
      * Returns all of the keys in the set that start with {@code prefix}.
+     * Complexity is O(L + Log(N))
+     * L= length of the string
+     * N = no of inputs
      * @param prefix the prefix
      * @return all of the keys in the set that start with {@code prefix},
      *     as an iterable
@@ -236,6 +257,9 @@ public class TST<Value> {
     }
     /**.
      * method to collect
+     * Complexity is O(L + Log(N))
+     * L= length of the string
+     * N = no of inputs
      *
      * @param      x       { Node<Value> }
      * @param      prefix  The prefix
@@ -259,6 +283,9 @@ public class TST<Value> {
     /**.
      * Returns all of the keys in the symbol table that match {@code pattern},
      * where . symbol is treated as a wildcard character.
+     * Complexity is O(L + Log(N))
+     * L= length of the string
+     * N = no of inputs
      * @param pattern the pattern
      * @return all of the keys in the symbol table that match {@code pattern},
      *     as an iterable, where . is treated as a wildcard character.
@@ -270,7 +297,10 @@ public class TST<Value> {
     }
     /**.
      * method to collect
-     *
+     * Complexity is O(L + Log(N))
+     * L= length of the string
+     * N = no of inputs
+     * 
      * @param      x        { Node }
      * @param      prefix   The prefix
      * @param      i        { StringBuilder }
