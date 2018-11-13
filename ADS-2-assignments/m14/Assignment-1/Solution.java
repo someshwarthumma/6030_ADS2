@@ -2,7 +2,13 @@ import java.util.Scanner;
 /**.
  * solution class
  */
-public class Solution {
+final class Solution {
+	/**.
+	 * constructor
+	 */
+	private Solution() {
+		//constructor
+	}
 	/**.
 	 * main method to handle the input
 	 * Complexity is L * N
@@ -10,7 +16,7 @@ public class Solution {
 	 * N = No Of words
 	 * @param      args  The arguments
 	 */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		String[] words = loadWords();
 		//Your code goes here...
 		Scanner s = new Scanner(System.in);
