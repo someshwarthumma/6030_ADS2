@@ -111,7 +111,7 @@ public class Queue<Item> implements Iterable<Item> {
     public String toString() {
         StringBuilder s = new StringBuilder();
         for (Item item : this) {
-            s.append(item + " ");
+            s.append(item + "\n");
         }
         return s.toString();
     }
