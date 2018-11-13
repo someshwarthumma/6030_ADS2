@@ -1,5 +1,15 @@
 import java.util.Scanner;
+/**.
+ * solution class
+ */
 public class Solution {
+	/**.
+	 * main method to handle the input
+	 * Complexity is L * N
+	 * L = length of word
+	 * N = No Of words
+	 * @param      args  The arguments
+	 */
 	public static void main(String[] args) {
 		String[] words = loadWords();
 		//Your code goes here...
@@ -12,14 +22,18 @@ public class Solution {
 				tst.put(each.substring(n, len), 0);
 			}
 		}
-
 		/*for(String every: tst.keysWithPrefix(subtring)){
 			System.out.println(every);
 		}*/
 		System.out.println(tst.keysWithPrefix(subtring));
 
 	}
-
+	/**.
+	 * load Words method
+	 * Complexity is O(N)
+	 *
+	 * @return     { String[] }
+	 */
 	public static String[] loadWords() {
 		In in = new In("/Files/dictionary-algs4.txt");
 		String[] words = in.readAllStrings();
