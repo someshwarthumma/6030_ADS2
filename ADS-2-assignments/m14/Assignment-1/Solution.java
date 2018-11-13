@@ -6,10 +6,10 @@ public class Solution {
 		Scanner s = new Scanner(System.in);
 		String subtring = s.nextLine();
 		TST tst = new TST();
-		for(String each: words){
+		for (String each : words) {
 			int len = each.length();
-			for(int n = 0; n < each.length(); n++){
-				tst.put(each.substring(n,len), 0);
+			for (int n = 0; n < each.length(); n++) {
+				tst.put(each.substring(n, len), 0);
 			}
 		}
 
