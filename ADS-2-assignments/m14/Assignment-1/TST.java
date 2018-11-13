@@ -220,7 +220,6 @@ public class TST<Value> {
      * Returns all keys in the symbol table as an {@code Iterable}.
      * To iterate over all of the keys in the symbol table named {@code st},
      * use the foreach notation: {@code for (Key key : st.keys())}.
-     * 
      * @return all keys in the symbol table as an {@code Iterable}
      */
     public Iterable<String> keys() {
@@ -300,7 +299,6 @@ public class TST<Value> {
      * Complexity is O(L + Log(N))
      * L= length of the string
      * N = no of inputs
-     * 
      * @param      x        { Node }
      * @param      prefix   The prefix
      * @param      i        { StringBuilder }
@@ -330,4 +328,3 @@ public class TST<Value> {
         }
     }
 }
-
