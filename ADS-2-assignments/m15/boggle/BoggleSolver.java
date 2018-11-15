@@ -102,7 +102,7 @@ public class BoggleSolver {
 			
 
 		}
-		marked[i][j]= false;
+		//marked[i][j]= false;
 
 		//marked[i][j] = true;
 	}
