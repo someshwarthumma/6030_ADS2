@@ -26,7 +26,7 @@ public class BoggleSolver {
 		for(int i=0; i < rows ; i++){
 			for( int j=0; j< column; j++){
 				marked = new boolean[board.rows()][board.cols()];
-				dfs(board, i, j, board.getLetter(i, j)+"", marked);
+				dfs(board, i, j, getChar(i, j), marked);
 			}
 			marked = new boolean[board.rows()][board.cols()];
 		}
@@ -60,7 +60,7 @@ public class BoggleSolver {
 		//String word;
 		
 		marked[i][j] = true;
-		if(tst.contains(word) && !bag.contains(word) && word.length() >2){
+		if(tst.contains(word) && !bag.contains(word) /*&& word.length() >2*/){
 			bag.add(word);
 		}
 		if(isValid(word)){
