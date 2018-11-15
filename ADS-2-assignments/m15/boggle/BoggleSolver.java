@@ -6,6 +6,7 @@ public class BoggleSolver {
 	int column;
 	int rows;
 	ArrayList<String> bag;
+	BoggleBoard board;
 	static TST<Integer> tst;
 	public BoggleSolver(final String[] dictionary) {
 		this.dict = dictionary;
@@ -15,10 +16,10 @@ public class BoggleSolver {
 		}
 	}
 	// Returns the set of all valid words in the given Boggle board, as an Iterable.
-	public Iterable<String> getAllValidWords(BoggleBoard board) {
+	public Iterable<String> getAllValidWords(BoggleBoard boar) {
 		bag = new ArrayList<String>();
 		column = board.cols();
-		//BoggleBoard board1 = board;
+		board = boar;
 		rows = board.rows();
 		boolean[][] marked = new boolean[rows][column];
 		for(int i=0; i < rows ; i++){
@@ -43,47 +44,56 @@ public class BoggleSolver {
 		}
 		return true;
 	}
+	private String getChar(int i, int j){
+		char a = board.getLetter(i, j);
+		if(a == 'Q'){
+			return "QU";
+		}
+		return a+"";
+	}
 
 	private void dfs(BoggleBoard board, int i, int j, String word, boolean[][] marked){
 		if(i<0 || i >= rows || j <0 || j>= column){
 			return;
 		}
+		//String word;
+		
 		marked[i][j] = true;
 		if(tst.contains(word) && !bag.contains(word) && word.length() >2){
 			bag.add(word);
 		}
 		if(isValid(word)){
 			if(checkIndex(i+1,j+1) && !marked[i+1][j+1]){
-				dfs(board, i+1, j+1, word+board.getLetter(i+1, j+1), marked);
+				dfs(board, i+1, j+1, word+getChar(i+1, j+1), marked);
 				marked[i+1][j+1] = false;
 			}
 			if(checkIndex(i-1, j-1) && !marked[i-1][j-1]){
-				dfs(board, i-1, j-1, word+board.getLetter(i-1, j-1), marked);
+				dfs(board, i-1, j-1, word+getChar(i-1, j-1), marked);
 				marked[i-1][j-1] = false;
 			}
 			if(checkIndex(i-1, j+1) && !marked[i-1][j+1]){
-				dfs(board, i-1, j+1, word+board.getLetter(i-1, j+1), marked);
+				dfs(board, i-1, j+1, word+getChar(i-1, j+1), marked);
 				marked[i-1][j+1] = false;
 			}
 			if(checkIndex(i+1, j-1) && !marked[i+1][j-1]){
-				dfs(board, i+1, j+1, word+board.getLetter(i+1, j-1), marked);
+				dfs(board, i+1, j+1, word+getChar(i+1, j-1), marked);
 				marked[i+1][j-1] = false;
 			}
 			if(checkIndex(i-1, j) && !marked[i-1][j]){
-				dfs(board, i-1, j, word+board.getLetter(i-1, j), marked);
+				dfs(board, i-1, j, word+getChar(i-1, j), marked);
 				marked[i-1][j] = false;
 			}
 
 			if(checkIndex(i+1, j) && !marked[i+1][j]){
-				dfs(board, i+1, j, word+board.getLetter(i+1, j), marked);
+				dfs(board, i+1, j, word+getChar(i+1, j), marked);
 				marked[i+1][j] = false;
 			}
 			if(checkIndex(i, j+1) && !marked[i][j+1]){
-				dfs(board, i, j+1, word+board.getLetter(i, j+1), marked);
+				dfs(board, i, j+1, word+getChar(i, j+1), marked);
 				marked[i][j+1] = false;
 			}
 			if(checkIndex(i, j-1) && !marked[i][j-1]){
-				dfs(board, i, j-1, word+board.getLetter(i, j-1), marked);
+				dfs(board, i, j-1, word+getChar(i, j-1), marked);
 				marked[i][j-1] =false;
 			}
 			
