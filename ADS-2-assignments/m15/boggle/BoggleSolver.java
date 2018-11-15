@@ -8,6 +8,7 @@ public class BoggleSolver {
 	ArrayList<String> bag;
 	BoggleBoard board;
 	static TST<Integer> tst;
+	boolean[][] marked;
 	public BoggleSolver(final String[] dictionary) {
 		this.dict = dictionary;
 		tst = new TST<Integer>();
@@ -20,15 +21,15 @@ public class BoggleSolver {
 		bag = new ArrayList<String>();
 		this.board = board;
 		column = board.cols();
-		
+		marked = new boolean[board.rows()][board.cols()];
 		rows = board.rows();
 		boolean[][] marked = new boolean[rows][column];
 		for(int i=0; i < rows ; i++){
 			for( int j=0; j< column; j++){
-				marked = new boolean[board.rows()][board.cols()];
+				//marked = new boolean[board.rows()][board.cols()];
 				dfs(board, i, j, getChar(i, j), marked);
 			}
-			marked = new boolean[board.rows()][board.cols()];
+			//marked = new boolean[board.rows()][board.cols()];
 		}
 		return bag;
 	}
@@ -66,11 +67,11 @@ public class BoggleSolver {
 		if(isValid(word)){
 			if(checkIndex(i+1,j+1) && !marked[i+1][j+1]){
 				dfs(board, i+1, j+1, word+getChar(i+1, j+1), marked);
-				marked[i+1][j+1] = false;
+				//marked[i+1][j+1] = false;
 			}
 			if(checkIndex(i-1, j-1) && !marked[i-1][j-1]){
 				dfs(board, i-1, j-1, word+getChar(i-1, j-1), marked);
-				marked[i-1][j-1] = false;
+				//marked[i-1][j-1] = false;
 			}
 			if(checkIndex(i-1, j+1) && !marked[i-1][j+1]){
 				dfs(board, i-1, j+1, word+getChar(i-1, j+1), marked);
@@ -78,24 +79,24 @@ public class BoggleSolver {
 			}
 			if(checkIndex(i+1, j-1) && !marked[i+1][j-1]){
 				dfs(board, i+1, j+1, word+getChar(i+1, j-1), marked);
-				marked[i+1][j-1] = false;
+				//marked[i+1][j-1] = false;
 			}
 			if(checkIndex(i-1, j) && !marked[i-1][j]){
 				dfs(board, i-1, j, word+getChar(i-1, j), marked);
-				marked[i-1][j] = false;
+				//marked[i-1][j] = false;
 			}
 
 			if(checkIndex(i+1, j) && !marked[i+1][j]){
 				dfs(board, i+1, j, word+getChar(i+1, j), marked);
-				marked[i+1][j] = false;
+				//marked[i+1][j] = false;
 			}
 			if(checkIndex(i, j+1) && !marked[i][j+1]){
 				dfs(board, i, j+1, word+getChar(i, j+1), marked);
-				marked[i][j+1] = false;
+				//marked[i][j+1] = false;
 			}
 			if(checkIndex(i, j-1) && !marked[i][j-1]){
 				dfs(board, i, j-1, word+getChar(i, j-1), marked);
-				marked[i][j-1] =false;
+				//marked[i][j-1] =false;
 			}
 			
 			
@@ -104,7 +105,7 @@ public class BoggleSolver {
 		}
 		//marked[i][j]= false;
 
-		//marked[i][j] = true;
+		marked[i][j] = true;
 	}
 	//private dfs(Grapgh g, String source)
 	// Returns the score of the given word if it is in the dictionary, zero otherwise.
