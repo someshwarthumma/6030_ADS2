@@ -588,7 +588,8 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:18: Line is longer than 80 characters (found 88). [LineLength]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:19:9: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'getAllValidWords' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'getAllValidWords' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:19:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:19:50: Parameter boar should be final. [FinalParameters]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:19:50: Parameter board should be final. [FinalParameters]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:19:62: 'board' hides a field. [HiddenField]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:23: Line has trailing spaces. [RegexpSingleline]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:26:20: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:26:26: '=' is not preceded with whitespace. [WhitespaceAround]
@@ -856,7 +857,7 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:124:32: '>=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:124:34: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 291 errors.
+Checkstyle ends with 292 errors.
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\In.java:28: Line has trailing spaces. [RegexpSingleline]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\In.java:33: Line has trailing spaces. [RegexpSingleline]

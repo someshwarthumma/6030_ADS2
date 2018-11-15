@@ -16,9 +16,9 @@ public class BoggleSolver {
 		}
 	}
 	// Returns the set of all valid words in the given Boggle board, as an Iterable.
-	public Iterable<String> getAllValidWords(BoggleBoard boar) {
+	public Iterable<String> getAllValidWords(BoggleBoard board) {
 		bag = new ArrayList<String>();
-		board = boar;
+		//board = boar;
 		column = board.cols();
 		
 		rows = board.rows();
