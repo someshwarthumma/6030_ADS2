@@ -60,40 +60,40 @@ public class BoggleSolver {
 		//String word;
 		
 		marked[i][j] = true;
-		if(tst.contains(word) && !bag.contains(word) /*&& word.length() >2*/){
+		if(tst.contains(word) && (!bag.contains(word)) /*&& word.length() >2*/){
 			bag.add(word);
 		}
-		if(isValid(word)){
-			if(checkIndex(i+1,j+1) && !marked[i+1][j+1]){
+		//if(isValid(word)){
+			if(checkIndex(i+1,j+1) && !marked[i+1][j+1] && isValid(word)){
 				dfs(board, i+1, j+1, word+getChar(i+1, j+1), marked);
 				marked[i+1][j+1] = false;
 			}
-			if(checkIndex(i-1, j-1) && !marked[i-1][j-1]){
+			if(checkIndex(i-1, j-1) && !marked[i-1][j-1] && isValid(word)){
 				dfs(board, i-1, j-1, word+getChar(i-1, j-1), marked);
 				marked[i-1][j-1] = false;
 			}
-			if(checkIndex(i-1, j+1) && !marked[i-1][j+1]){
+			if(checkIndex(i-1, j+1) && !marked[i-1][j+1] && isValid(word)){
 				dfs(board, i-1, j+1, word+getChar(i-1, j+1), marked);
 				marked[i-1][j+1] = false;
 			}
-			if(checkIndex(i+1, j-1) && !marked[i+1][j-1]){
+			if(checkIndex(i+1, j-1) && !marked[i+1][j-1] && isValid(word)){
 				dfs(board, i+1, j+1, word+getChar(i+1, j-1), marked);
 				marked[i+1][j-1] = false;
 			}
-			if(checkIndex(i-1, j) && !marked[i-1][j]){
+			if(checkIndex(i-1, j) && !marked[i-1][j] && isValid(word)){
 				dfs(board, i-1, j, word+getChar(i-1, j), marked);
 				marked[i-1][j] = false;
 			}
 
-			if(checkIndex(i+1, j) && !marked[i+1][j]){
+			if(checkIndex(i+1, j) && !marked[i+1][j] && isValid(word)){
 				dfs(board, i+1, j, word+getChar(i+1, j), marked);
 				marked[i+1][j] = false;
 			}
-			if(checkIndex(i, j+1) && !marked[i][j+1]){
+			if(checkIndex(i, j+1) && !marked[i][j+1] && isValid(word)){
 				dfs(board, i, j+1, word+getChar(i, j+1), marked);
 				marked[i][j+1] = false;
 			}
-			if(checkIndex(i, j-1) && !marked[i][j-1]){
+			if(checkIndex(i, j-1) && !marked[i][j-1] && isValid(word)){
 				dfs(board, i, j-1, word+getChar(i, j-1), marked);
 				marked[i][j-1] =false;
 			}
@@ -101,7 +101,7 @@ public class BoggleSolver {
 			
 			
 
-		}
+		//}
 		//marked[i][j]= false;
 
 		//marked[i][j] = true;
