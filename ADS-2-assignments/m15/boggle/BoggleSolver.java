@@ -26,10 +26,10 @@ public class BoggleSolver {
 		boolean[][] marked = new boolean[rows][column];
 		for(int i=0; i < rows ; i++){
 			for( int j=0; j< column; j++){
-				//marked = new boolean[board.rows()][board.cols()];
+				// marked = new boolean[board.rows()][board.cols()];
 				dfs(board, i, j, getChar(i, j), marked);
 			}
-			//marked = new boolean[board.rows()][board.cols()];
+			// marked = new boolean[board.rows()][board.cols()];
 		}
 		return bag;
 	}
@@ -67,15 +67,15 @@ public class BoggleSolver {
 		if(isValid(word)){
 			if(checkIndex(i+1,j+1) && !marked[i+1][j+1]){
 				dfs(board, i+1, j+1, word+getChar(i+1, j+1), marked);
-				//marked[i+1][j+1] = false;
+				// marked[i+1][j+1] = false;
 			}
 			if(checkIndex(i-1, j-1) && !marked[i-1][j-1]){
 				dfs(board, i-1, j-1, word+getChar(i-1, j-1), marked);
-				//marked[i-1][j-1] = false;
+				// marked[i-1][j-1] = false;
 			}
 			if(checkIndex(i-1, j+1) && !marked[i-1][j+1]){
 				dfs(board, i-1, j+1, word+getChar(i-1, j+1), marked);
-				marked[i-1][j+1] = false;
+				// marked[i-1][j+1] = false;
 			}
 			if(checkIndex(i+1, j-1) && !marked[i+1][j-1]){
 				dfs(board, i+1, j+1, word+getChar(i+1, j-1), marked);
@@ -103,9 +103,9 @@ public class BoggleSolver {
 			
 
 		}
-		//marked[i][j]= false;
+		marked[i][j]= false;
 
-		marked[i][j] = true;
+		//marked[i][j] = true;
 	}
 	//private dfs(Grapgh g, String source)
 	// Returns the score of the given word if it is in the dictionary, zero otherwise.

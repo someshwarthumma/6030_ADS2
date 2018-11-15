@@ -604,7 +604,7 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:28:36: '=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:28:40: '<' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:28:54: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:29: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:29: Line is longer than 80 characters (found 84). [LineLength]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:36:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:36:33: Parameter word should be final. [FinalParameters]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:36:45: '{' is not preceded with whitespace. [WhitespaceAround]
@@ -717,10 +717,6 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:77:69: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:77:73: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:77:74: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:78:41: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:78:42: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:78:46: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:78:47: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:80:27: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:80:40: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:80:41: '+' is not followed by whitespace. [WhitespaceAround]
@@ -797,6 +793,7 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:101: Line has trailing spaces. [RegexpSingleline]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:102: Line has trailing spaces. [RegexpSingleline]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:103: Line has trailing spaces. [RegexpSingleline]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:106:29: '=' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:111: Line is longer than 80 characters (found 90). [LineLength]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:112: Line is longer than 80 characters (found 85). [LineLength]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:113:9: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'scoreOf' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'scoreOf' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
@@ -835,7 +832,7 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:125:32: '>=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:125:34: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 270 errors.
+Checkstyle ends with 267 errors.
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\In.java:28: Line has trailing spaces. [RegexpSingleline]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\In.java:33: Line has trailing spaces. [RegexpSingleline]
