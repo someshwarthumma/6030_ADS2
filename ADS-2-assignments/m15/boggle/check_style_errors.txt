@@ -604,7 +604,7 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:28:36: '=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:28:40: '<' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:28:54: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:29: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:29: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:36:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:36:33: Parameter word should be final. [FinalParameters]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:36:45: '{' is not preceded with whitespace. [WhitespaceAround]

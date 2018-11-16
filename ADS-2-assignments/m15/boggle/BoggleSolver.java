@@ -26,10 +26,10 @@ public class BoggleSolver {
 		boolean[][] marked = new boolean[rows][column];
 		for(int i=0; i < rows ; i++){
 			for( int j=0; j< column; j++){
-				// marked = new boolean[board.rows()][board.cols()];
+				marked = new boolean[board.rows()][board.cols()];
 				dfs(board, i, j, getChar(i, j), marked);
 			}
-			// marked = new boolean[board.rows()][board.cols()];
+			marked = new boolean[board.rows()][board.cols()];
 		}
 		return bag;
 	}
