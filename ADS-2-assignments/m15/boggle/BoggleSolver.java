@@ -105,7 +105,7 @@ public class BoggleSolver {
 		}
 		// marked[i][j]= false;
 
-		//marked[i][j] = true;
+		marked[i][j] = true;
 	}
 	//private dfs(Grapgh g, String source)
 	// Returns the score of the given word if it is in the dictionary, zero otherwise.
