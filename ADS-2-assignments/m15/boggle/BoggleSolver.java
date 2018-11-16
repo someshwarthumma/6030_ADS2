@@ -7,7 +7,7 @@ public class BoggleSolver {
 	int rows;
 	int columns;
 	BoggleBoard board;
-	public BoggleSolver(String[] dictionary) {
+	public BoggleSolver(final String[] dictionary) {
 		tst = new TST<Integer>();
 		list = new ArrayList<String>();
 		for (int i = 0; i < dictionary.length; i++) {
@@ -23,7 +23,7 @@ public class BoggleSolver {
 		}
 		return true;*/
 	}
-	private String getString(int i, int j) {
+	private String getString(final int i, int j) {
 		char a = board.getLetter(i, j);
 
 		if (a == 'Q') {
@@ -32,7 +32,7 @@ public class BoggleSolver {
 		return a + "";
 	}
 	// Returns the set of all valid words in the given Boggle board, as an Iterable.
-	public ArrayList<String> getAllValidWords(BoggleBoard board) {
+	public ArrayList<String> getAllValidWords(final BoggleBoard board) {
 		this.rows = board.rows();
 		this.columns = board.cols();
 		this.board = board;
@@ -47,13 +47,13 @@ public class BoggleSolver {
 		}
 		return list;
 	}
-	private boolean checkIndex(int i , int j) {
+	private boolean checkIndex(final int i , final int j) {
 		if (i < 0 || i >= rows || j < 0 || j >= columns) {
 			return false;
 		}
 		return true;
 	}
-	private void dfs(BoggleBoard board, int i, int j, String word, boolean[][] visited) {
+	private void dfs(final BoggleBoard board, final int i, final int j, final String word, final boolean[][] visited) {
 		if (!isValid(word)) {
 			return;
 		}
@@ -89,7 +89,7 @@ public class BoggleSolver {
 	}
 	// Returns the score of the given word if it is in the dictionary, zero otherwise.
 	// (You can assume the word contains only the uppercase letters A through Z.)
-	public int scoreOf(String word) {
+	public int scoreOf(final String word) {
 		int len = word.length();
 		if (len >= 8) {
 			return 11;
