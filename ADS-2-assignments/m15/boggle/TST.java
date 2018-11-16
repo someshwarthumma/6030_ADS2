@@ -231,7 +231,8 @@ public class TST<Value> {
         return queue;
     }
     public boolean isAPrefix(String word){
-        try{
+        return get(root,word, 0)!=null;
+        /*try{
         Node<Value> cur = root;
         for(int i=0;i<word.length();i++){
             int x = cur.getChar().compareTo(word.charAt(i));
@@ -250,7 +251,7 @@ public class TST<Value> {
         return true;
         } catch(Exception e){
             return false;
-        }
+        }*/
     }
 
     /**.
