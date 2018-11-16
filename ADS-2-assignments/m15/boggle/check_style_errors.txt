@@ -568,13 +568,14 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:6: Line is longer than 80 characters (found 93). [LineLength]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:7: Line is longer than 80 characters (found 104). [LineLength]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:47:33: Parameter word should be final. [FinalParameters]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:65:47: Parameter j should be final. [FinalParameters]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:80:69: 'board' hides a field. [HiddenField]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:89: Line is longer than 80 characters (found 83). [LineLength]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:103:47: ',' is preceded with whitespace. [NoWhitespaceBefore]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:118: Line is longer than 80 characters (found 123). [LineLength]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:118:44: 'board' hides a field. [HiddenField]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:118: Line is longer than 80 characters (found 111). [LineLength]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:118:26: Parameter board should be final. [FinalParameters]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:118:38: 'board' hides a field. [HiddenField]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:118:90: Parameter visited should be final. [FinalParameters]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:123: Line is longer than 80 characters (found 88). [LineLength]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:127: Line is longer than 80 characters (found 90). [LineLength]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:130: Line is longer than 80 characters (found 90). [LineLength]
@@ -591,6 +592,7 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:148: Line is longer than 80 characters (found 82). [LineLength]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:152: Line is longer than 80 characters (found 90). [LineLength]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:153: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:161:28: Parameter word should be final. [FinalParameters]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:163:28: '8' is a magic number. [MagicNumber]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:164:32: '11' is a magic number. [MagicNumber]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:165:35: '7' is a magic number. [MagicNumber]
@@ -600,7 +602,7 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:169:35: '5' is a magic number. [MagicNumber]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\BoggleSolver.java:171:35: '3' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 35 errors.
+Checkstyle ends with 37 errors.
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\In.java:28: Line has trailing spaces. [RegexpSingleline]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m15\boggle\In.java:33: Line has trailing spaces. [RegexpSingleline]

@@ -44,7 +44,7 @@ public class BoggleSolver {
      *
      * @return     True if valid, False otherwise.
      */
-	private boolean isValid(String word) {
+	private boolean isValid(final String word) {
 		return tst.isAPrefix(word);
 		/*Queue<String> queue = tst.keysWithPrefix(word);
 		if(queue.size()==0) {
@@ -115,7 +115,7 @@ public class BoggleSolver {
      * @param      word     The word of String
      * @param      visited  The visited boolean[][]
      */
-	private void dfs(final BoggleBoard board, final int i, final int j, final String word, final boolean[][] visited) {
+	private void dfs(BoggleBoard board, final int i, final int j, final String word, boolean[][] visited) {
 		if (!isValid(word)) {
 			return;
 		}
@@ -158,7 +158,7 @@ public class BoggleSolver {
      *
      * @return     { int }
      */
-	public int scoreOf(final String word) {
+	public int scoreOf(String word) {
 		int len = word.length();
 		if (len >= 8) {
 			return 11;
