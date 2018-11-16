@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 /**.
  * boggle solver
+ * 
  */
 public class BoggleSolver {
 	// Initializes the data structure using the given array of strings as the dictionary.
@@ -27,6 +28,7 @@ public class BoggleSolver {
 	private BoggleBoard board;
     /**.
      * constructor of goggle solver
+     * Complexity is O(dictionary length);
      *
      * @param      dictionary  The dictionary
      */
@@ -39,6 +41,7 @@ public class BoggleSolver {
 	}
     /**.
      * isValid method to check weather valid or not.
+     * Complexity is O(length of the word)
      *
      * @param      word  The word
      *
@@ -55,6 +58,7 @@ public class BoggleSolver {
     /**.
      * method to return the string
      * that is if the char at the given location is Q
+     * Complexity is O(1)
      * then it will return the QU
      *
      * @param      i     { index of type int }
@@ -72,12 +76,13 @@ public class BoggleSolver {
 	}
     /**.
      * method to find all valid words
+     * Complexity is o(rows*columns)
      *
      * @param      board  The board
      *
      * @return     All valid words.
      */
-	public ArrayList<String> getAllValidWords(final BoggleBoard board) {
+	public Iterable<String> getAllValidWords(final BoggleBoard board) {
 		this.rows = board.rows();
 		this.columns = board.cols();
 		this.board = board;
@@ -93,7 +98,8 @@ public class BoggleSolver {
 		return list;
 	}
     /**.
-     * method to check for the valid indx
+     * method to check for the valid index
+     * complexity is o(1)
      *
      * @param      i     { int }
      * @param      j     { int }
@@ -108,6 +114,7 @@ public class BoggleSolver {
 	}
     /**.
      * dfs method
+     * Complexityy is o(edges + vertices)
      *
      * @param      board    The board
      * @param      i        { index of int}
@@ -153,7 +160,7 @@ public class BoggleSolver {
 	// (You can assume the word contains only the uppercase letters A through Z.)
     /**.
      * method to find the score of the given word
-     *
+     * complexity is o(1)
      * @param      word  The word
      *
      * @return     { int }
