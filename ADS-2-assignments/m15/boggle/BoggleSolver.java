@@ -67,43 +67,43 @@ public class BoggleSolver {
 		if(isValid(word)){
 			if(checkIndex(i+1,j+1) && !marked[i+1][j+1]){
 				dfs(board, i+1, j+1, word+getChar(i+1, j+1), marked);
-				// marked[i+1][j+1] = false;
+				 marked[i+1][j+1] = false;
 			}
 			if(checkIndex(i-1, j-1) && !marked[i-1][j-1]){
 				dfs(board, i-1, j-1, word+getChar(i-1, j-1), marked);
-				// marked[i-1][j-1] = false;
+				marked[i-1][j-1] = false;
 			}
 			if(checkIndex(i-1, j+1) && !marked[i-1][j+1]){
 				dfs(board, i-1, j+1, word+getChar(i-1, j+1), marked);
-				// marked[i-1][j+1] = false;
+				marked[i-1][j+1] = false;
 			}
 			if(checkIndex(i+1, j-1) && !marked[i+1][j-1]){
 				dfs(board, i+1, j+1, word+getChar(i+1, j-1), marked);
-				//marked[i+1][j-1] = false;
+				marked[i+1][j-1] = false;
 			}
 			if(checkIndex(i-1, j) && !marked[i-1][j]){
 				dfs(board, i-1, j, word+getChar(i-1, j), marked);
-				//marked[i-1][j] = false;
+				marked[i-1][j] = false;
 			}
 
 			if(checkIndex(i+1, j) && !marked[i+1][j]){
 				dfs(board, i+1, j, word+getChar(i+1, j), marked);
-				//marked[i+1][j] = false;
+				marked[i+1][j] = false;
 			}
 			if(checkIndex(i, j+1) && !marked[i][j+1]){
 				dfs(board, i, j+1, word+getChar(i, j+1), marked);
-				//marked[i][j+1] = false;
+				marked[i][j+1] = false;
 			}
 			if(checkIndex(i, j-1) && !marked[i][j-1]){
 				dfs(board, i, j-1, word+getChar(i, j-1), marked);
-				//marked[i][j-1] =false;
+				marked[i][j-1] =false;
 			}
 			
 			
 			
 
 		}
-		marked[i][j]= false;
+		// marked[i][j]= false;
 
 		//marked[i][j] = true;
 	}
