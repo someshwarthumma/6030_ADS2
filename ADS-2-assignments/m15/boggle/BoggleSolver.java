@@ -2,112 +2,100 @@ import java.util.ArrayList;
 public class BoggleSolver {
 	// Initializes the data structure using the given array of strings as the dictionary.
 	// (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
-	String[] dict;
-	int column;
+	TST<Integer> trie;
+	ArrayList<String> list;
 	int rows;
-	ArrayList<String> bag;
+	int columns;
 	BoggleBoard board;
-	static TST<Integer> tst;
-	boolean[][] marked;
-	public BoggleSolver(final String[] dictionary) {
-		this.dict = dictionary;
-		tst = new TST<Integer>();
-		for(String each: dict){
-			tst.put(each,0);
+	public BoggleSolver(String[] dictionary) {
+		trie = new TST<Integer>();
+		list = new ArrayList<String>();
+		for(int i = 0; i < dictionary.length; i++) {
+			trie.put(dictionary[i], 11);
 		}
 	}
-	// Returns the set of all valid words in the given Boggle board, as an Iterable.
-	public Iterable<String> getAllValidWords(BoggleBoard board) {
-		bag = new ArrayList<String>();
-		this.board = board;
-		column = board.cols();
-		marked = new boolean[board.rows()][board.cols()];
-		rows = board.rows();
-		boolean[][] marked = new boolean[rows][column];
-		for(int i=0; i < rows ; i++){
-			for( int j=0; j< column; j++){
-				marked = new boolean[board.rows()][board.cols()];
-				dfs(board, i, j, getChar(i, j), marked);
-			}
-			marked = new boolean[board.rows()][board.cols()];
-		}
-		return bag;
-	}
-	private boolean isValid(String word){
-		Queue<String> temp = tst.keysWithPrefix(word);
-		if(temp.size()==0){
+
+	public boolean isValid(String word) {
+		Queue<String> queue = trie.keysWithPrefix(word);
+		if(/*!trie.hasPrefix(word)*/ queue.size()==0) {
 			return false;
 		}
 		return true;
 	}
-	private boolean checkIndex(int i, int j){
-		if(i<0 || i >= rows || j <0 || j>= column){
-			return false;
-		}
-		return true;
-	}
-	private String getChar(int i, int j){
+	public String getString(int i, int j) {
 		char a = board.getLetter(i, j);
-		if(a == 'Q'){
+
+		if(a == 'Q') {
 			return "QU";
 		}
-		return a+"";
+		return a + "";
 	}
-
-	private void dfs(BoggleBoard board, int i, int j, String word, boolean[][] marked){
-		if(i<0 || i >= rows || j <0 || j>= column){
-			return;
+	// Returns the set of all valid words in the given Boggle board, as an Iterable.
+	public ArrayList<String> getAllValidWords(BoggleBoard board) {
+		this.rows = board.rows();
+		this.columns = board.cols();
+		this.board = board;
+		boolean[][] visited;
+		visited = new boolean[board.rows()][board.cols()];
+		for(int i = 0; i< board.rows(); i++) {
+			for(int j = 0; j < board.cols(); j++) {
+				// visited = new boolean[board.rows()][board.cols()];
+				if(checkIndex(i,j)){
+					dfs(board, i, j, getString(i, j), visited);
+				}
+			}
+			//visited = new boolean[board.rows()][board.cols()];
 		}
-		//String word;
-		
-		marked[i][j] = true;
-		if(tst.contains(word) && (!bag.contains(word)) && word.length() >2){
-			bag.add(word);
-		}
-		if(isValid(word)){
-			if(checkIndex(i+1,j+1) && !marked[i+1][j+1]){
-				dfs(board, i+1, j+1, word+getChar(i+1, j+1), marked);
-				 marked[i+1][j+1] = false;
-			}
-			if(checkIndex(i-1, j-1) && !marked[i-1][j-1]){
-				dfs(board, i-1, j-1, word+getChar(i-1, j-1), marked);
-				marked[i-1][j-1] = false;
-			}
-			if(checkIndex(i-1, j+1) && !marked[i-1][j+1]){
-				dfs(board, i-1, j+1, word+getChar(i-1, j+1), marked);
-				marked[i-1][j+1] = false;
-			}
-			if(checkIndex(i+1, j-1) && !marked[i+1][j-1]){
-				dfs(board, i+1, j+1, word+getChar(i+1, j-1), marked);
-				marked[i+1][j-1] = false;
-			}
-			if(checkIndex(i-1, j) && !marked[i-1][j]){
-				dfs(board, i-1, j, word+getChar(i-1, j), marked);
-				marked[i-1][j] = false;
-			}
-
-			if(checkIndex(i+1, j) && !marked[i+1][j]){
-				dfs(board, i+1, j, word+getChar(i+1, j), marked);
-				marked[i+1][j] = false;
-			}
-			if(checkIndex(i, j+1) && !marked[i][j+1]){
-				dfs(board, i, j+1, word+getChar(i, j+1), marked);
-				marked[i][j+1] = false;
-			}
-			if(checkIndex(i, j-1) && !marked[i][j-1]){
-				dfs(board, i, j-1, word+getChar(i, j-1), marked);
-				marked[i][j-1] =false;
-			}
-			
-			
-			
-
-		}
-		// marked[i][j]= false;
-
-		marked[i][j] = true;
+		return list;
 	}
-	//private dfs(Grapgh g, String source)
+	public boolean checkIndex(int i , int j) {
+		if(i < 0 || i >= rows || j < 0 || j >= columns) {
+			return false;
+		}
+		return true;
+	}
+	private void dfs(BoggleBoard board, int i, int j, String word, boolean[][] visited) {
+	if(!isValid(word)){
+		return;
+	}
+	visited[i][j] = true;
+	if(trie.contains(word) && (!list.contains(word))) {
+		list.add(word);
+	}
+	if(checkIndex(i+1, j + 1) && !visited[i+1][j + 1]) {
+		dfs(board, i+ 1, j + 1, word + getString(i+1, j + 1), visited);
+		//visited[i + 1][j + 1] = false;
+	}
+	if(checkIndex(i - 1, j - 1) && !visited[i-1][j - 1]) {
+		dfs(board, i- 1, j - 1, word + getString(i-1, j - 1), visited);
+		// visited[i - 1][j - 1] = false;
+	}
+	if( checkIndex(i - 1, j + 1) && !visited[i-1][j + 1]) {
+		dfs(board, i - 1, j + 1, word + getString(i-1, j + 1), visited);
+		// visited[i - 1][j + 1] = false;
+	}
+	if( checkIndex(i+1, j - 1) && !visited[i +1][j - 1]) {
+		dfs(board, i+ 1, j - 1, word + getString(i+1, j - 1), visited);
+		// visited[i + 1][j - 1] = false;
+	}
+	if( checkIndex(i-1, j) && !visited[i-1][j]) {
+		dfs(board, i -1, j, word + getString(i - 1, j), visited);
+		// visited[i - 1][j] = false;
+	}
+	if( checkIndex(i+1, j) && !visited[i+1][j]) {
+		dfs(board, i+ 1, j, word + getString(i+1, j), visited);
+		// visited[i + 1][j] = false;
+	}
+	if( checkIndex(i, j + 1) && !visited[i][j + 1]) {
+		dfs(board, i, j + 1, word + getString(i, j + 1), visited);
+		// visited[i][j + 1] = false;
+	}
+	if(checkIndex(i, j - 1) && !visited[i][j - 1]) {
+		dfs(board, i, j - 1, word + getString(i, j - 1), visited);
+		// visited[i][j - 1] = false;
+	}
+	visited[i][j] = false;
+	}
 	// Returns the score of the given word if it is in the dictionary, zero otherwise.
 	// (You can assume the word contains only the uppercase letters A through Z.)
 	public int scoreOf(String word) {
