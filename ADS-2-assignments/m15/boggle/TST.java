@@ -30,6 +30,9 @@ public class TST<Value> {
          * val variable
          */
         private Value val;
+        private Character getChar(){
+            return c;
+        }
     }
     /**.
      * TSt constructor
@@ -226,6 +229,28 @@ public class TST<Value> {
         Queue<String> queue = new Queue<String>();
         collect(root, new StringBuilder(), queue);
         return queue;
+    }
+    public boolean isAPrefix(String word){
+        try{
+        Node<Value> cur = root;
+        for(int i=0;i<word.length();i++){
+            int x = cur.getChar().compareTo(word.charAt(i));
+            if(x<0){
+                cur = cur.right;
+            } else if(x>0){
+                cur = cur.left;
+            } else if(x == 0){
+                cur = cur.mid;
+            }
+        }
+
+        if(cur == null){
+            return false;
+        }
+        return true;
+        } catch(Exception e){
+            return false;
+        }
     }
 
     /**.
