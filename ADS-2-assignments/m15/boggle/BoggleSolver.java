@@ -1,12 +1,35 @@
 import java.util.ArrayList;
+/**.
+ * boggle solver
+ */
 public class BoggleSolver {
 	// Initializes the data structure using the given array of strings as the dictionary.
 	// (You can assume each word in the dictionary contains only the uppercase letters A through Z.)
-	TST<Integer> tst;
-	ArrayList<String> list;
-	int rows;
-	int columns;
-	BoggleBoard board;
+    /**.
+     * Tst class object
+     */
+	private TST<Integer> tst;
+    /**.
+     * Arraylist
+     */
+	private ArrayList<String> list;
+    /**.
+     * rows
+     */
+	private int rows;
+    /**.
+     * columns
+     */
+	private int columns;
+    /**.
+     * boggle board
+     */
+	private BoggleBoard board;
+    /**.
+     * constructor of goggle solver
+     *
+     * @param      dictionary  The dictionary
+     */
 	public BoggleSolver(final String[] dictionary) {
 		tst = new TST<Integer>();
 		list = new ArrayList<String>();
@@ -14,7 +37,13 @@ public class BoggleSolver {
 			tst.put(dictionary[i], 0);
 		}
 	}
-
+    /**.
+     * isValid method to check weather valid or not.
+     *
+     * @param      word  The word
+     *
+     * @return     True if valid, False otherwise.
+     */
 	private boolean isValid(String word) {
 		return tst.isAPrefix(word);
 		/*Queue<String> queue = tst.keysWithPrefix(word);
@@ -23,6 +52,16 @@ public class BoggleSolver {
 		}
 		return true;*/
 	}
+    /**.
+     * method to return the string
+     * that is if the char at the given location is Q
+     * then it will return the QU
+     *
+     * @param      i     { index of type int }
+     * @param      j     { int }
+     *
+     * @return     The string.
+     */
 	private String getString(final int i, int j) {
 		char a = board.getLetter(i, j);
 
@@ -31,7 +70,13 @@ public class BoggleSolver {
 		}
 		return a + "";
 	}
-	// Returns the set of all valid words in the given Boggle board, as an Iterable.
+    /**.
+     * method to find all valid words
+     *
+     * @param      board  The board
+     *
+     * @return     All valid words.
+     */
 	public ArrayList<String> getAllValidWords(final BoggleBoard board) {
 		this.rows = board.rows();
 		this.columns = board.cols();
@@ -47,12 +92,29 @@ public class BoggleSolver {
 		}
 		return list;
 	}
+    /**.
+     * method to check for the valid indx
+     *
+     * @param      i     { int }
+     * @param      j     { int }
+     *
+     * @return     { boolean }
+     */
 	private boolean checkIndex(final int i , final int j) {
 		if (i < 0 || i >= rows || j < 0 || j >= columns) {
 			return false;
 		}
 		return true;
 	}
+    /**.
+     * dfs method
+     *
+     * @param      board    The board
+     * @param      i        { index of int}
+     * @param      j        { index of int }
+     * @param      word     The word of String
+     * @param      visited  The visited boolean[][]
+     */
 	private void dfs(final BoggleBoard board, final int i, final int j, final String word, final boolean[][] visited) {
 		if (!isValid(word)) {
 			return;
@@ -89,6 +151,13 @@ public class BoggleSolver {
 	}
 	// Returns the score of the given word if it is in the dictionary, zero otherwise.
 	// (You can assume the word contains only the uppercase letters A through Z.)
+    /**.
+     * method to find the score of the given word
+     *
+     * @param      word  The word
+     *
+     * @return     { int }
+     */
 	public int scoreOf(final String word) {
 		int len = word.length();
 		if (len >= 8) {
