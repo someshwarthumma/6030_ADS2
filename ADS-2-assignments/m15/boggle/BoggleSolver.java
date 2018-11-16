@@ -16,11 +16,12 @@ public class BoggleSolver {
 	}
 
 	private boolean isValid(String word) {
-		Queue<String> queue = tst.keysWithPrefix(word);
+		return tst.isAPrefix(word);
+		/*Queue<String> queue = tst.keysWithPrefix(word);
 		if(queue.size()==0) {
 			return false;
 		}
-		return true;
+		return true;*/
 	}
 	private String getString(int i, int j) {
 		char a = board.getLetter(i, j);
