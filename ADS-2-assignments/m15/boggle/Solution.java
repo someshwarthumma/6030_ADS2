@@ -1,18 +1,15 @@
-import java.util.Arrays;
-
-/**
+//import java.util.Arrays;
+/**.
  * Class for solution.
  */
-public class Solution {
-
-    /**
+final class Solution {
+    /**.
      * Constructs the object.
      */
     private Solution() {
         // empty constructor
     }
-
-    /**
+    /**.
      * Main method.
      *
      * @param      args  The arguments
@@ -39,7 +36,6 @@ public class Solution {
                 }
                 StdOut.println("Score = " + score);
                 break;
-
             default:
                 try {
                     dictionaryName = StdIn.readLine();
@@ -58,7 +54,6 @@ public class Solution {
                 }
                 break;
             }
-
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
