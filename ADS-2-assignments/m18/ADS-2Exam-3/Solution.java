@@ -133,7 +133,6 @@ class T9 {
 	// get all the prefixes that match with given prefix.
 	public Iterable<String> getAllWords(String prefix) {
 		// your code goes here
-
 		return tst.keysWithPrefix(prefix);
 	}
 
@@ -145,6 +144,20 @@ class T9 {
 	// return all possibilities(words), find top k with highest frequency.
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// your code goes here
+		MaxPQ<Integer> pq = new MaxPQ<Integer>();
+		for(String each: words){
+			int val = tst.get(each);
+			pq.insert(val);
+		}
+		Bag<String> bag = new Bag<String>();
+		for(int i =0;i<k;i++){
+			int max = pq.delMax();
+			for(String each: words){
+				if(max == tst.get(each)){
+					bag.add(each);
+				}
+			}
+		}
 		return null;
 	}
 
@@ -153,4 +166,6 @@ class T9 {
 	public Iterable<String> t9(String t9Signature, int k) {
 		return getSuggestions(potentialWords(t9Signature), k);
 	}
+
+	
 }
