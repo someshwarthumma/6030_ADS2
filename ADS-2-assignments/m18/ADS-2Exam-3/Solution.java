@@ -158,16 +158,23 @@ class T9 {
 				}
 			}
 		}*/
-
+		String[] wor = new String[k];
 		MaxPQ<Word> p = new MaxPQ<Word>();
 		for(String each: words){
 			int val = tst.get(each);
 			p.insert(new Word(each,val));
 		}
 		Bag<String> bag = new Bag<String>();
+		int j =0;
 		for(int i =0;i<k;i++){
 			Word max = p.delMax();
-			bag.add(max.getKey());
+			wor[j] = max.getKey();
+			//bag.add(max.getKey());
+			j++;
+		}
+		Arrays.sort(wor);
+		for(int i=0;i<k;i++){
+			bag.add(wor[i]);
 		}
 		return bag; 
 	}
