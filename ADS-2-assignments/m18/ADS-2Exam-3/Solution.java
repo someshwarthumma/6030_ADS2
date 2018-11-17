@@ -158,7 +158,7 @@ class T9 {
 				}
 			}
 		}
-		return null;
+		return bag; 
 	}
 
 	// final output
