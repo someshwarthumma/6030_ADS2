@@ -144,7 +144,7 @@ class T9 {
 	// return all possibilities(words), find top k with highest frequency.
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// your code goes here
-		MaxPQ<Integer> pq = new MaxPQ<Integer>();
+		/*MaxPQ<Integer> pq = new MaxPQ<Integer>();
 		for(String each: words){
 			int val = tst.get(each);
 			pq.insert(val);
@@ -157,6 +157,17 @@ class T9 {
 					bag.add(each);
 				}
 			}
+		}*/
+
+		MaxPQ<Word> p = new MaxPQ<Word>();
+		for(String each: words){
+			int val = tst.get(each);
+			p.insert(new Word(each,val));
+		}
+		Bag<String> bag = new Bag<String>();
+		for(int i =0;i<k;i++){
+			Word max = p.delMax();
+			bag.add(max.getKey());
 		}
 		return bag; 
 	}
@@ -167,5 +178,21 @@ class T9 {
 		return getSuggestions(potentialWords(t9Signature), k);
 	}
 
-	
+}
+class Word implements Comparable<Word> {
+	Integer val;
+	String key;
+	Word(String k, Integer v){
+		this.val = v;
+		this.key = k;
+	}
+	public String getKey(){
+		return key;
+	}
+	public Integer getVal(){
+		return val;
+	}
+	public int compareTo(Word that){
+		return val.compareTo(that.getVal());
+	}
 }
