@@ -173,7 +173,7 @@ class T9 {
 			j++;
 		}
 		Arrays.sort(wor);
-		for(int i=0;i<k;i++){
+		for(int i=k-1;i>=0;i--){
 			bag.add(wor[i]);
 		}
 		return bag; 

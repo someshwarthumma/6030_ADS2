@@ -524,11 +524,13 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:176:20: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:176:26: '=' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:176:27: '=' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:176:29: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:176:30: '<' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:176:31: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:176:33: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:176:37: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:176:28: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:176:29: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:176:31: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:176:32: '>=' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:176:34: '>=' is not followed by whitespace. [WhitespaceAround]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:176:36: ';' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:176:40: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:179: Line has trailing spaces. [RegexpSingleline]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:184:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:184:36: Parameter t9Signature should be final. [FinalParameters]
@@ -550,7 +552,7 @@ Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:202:30: Parameter that should be final. [FinalParameters]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:202:40: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 78 errors.
+Checkstyle ends with 80 errors.
 Starting audit...
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m18\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] H:\MSIT 1ST YEAR\ADS2\6030_ADS2\ADS-2-assignments\m18\ADS-2Exam-3\TST.java:46: Line is longer than 80 characters (found 84). [LineLength]
